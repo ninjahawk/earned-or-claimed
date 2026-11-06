@@ -1,0 +1,177 @@
+{
+"376": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"505": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"627": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"451": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"404": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"444": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"242": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"609": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"543": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"442": {
+"rule": "EARNED",
+"hand": "EARNED",
+"why": "partial: one of two items merged; second honestly reported below the bar"
+},
+"430": {
+"rule": "EARNED",
+"hand": "UNCLEAR",
+"why": "shown citation was from another workflow; same-workflow line exists but match to this job not confirmed from excerpt"
+},
+"410": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"358": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"428": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"340": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"249": {
+"rule": "EARNED",
+"hand": "EARNED",
+"why": "partial: first item merged, second honestly deferred at budget line"
+},
+"502": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"445": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"201": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"346": {
+"rule": "EARNED",
+"hand": "EARNED"
+},
+"72": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"617": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN",
+"why": "handoff is a token-count JSON, not a claim; now excluded"
+},
+"531": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"4": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"610": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"449": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"386": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"228": {
+"rule": "UNKNOWN",
+"hand": "EARNED",
+"why": "cited in a third ledger format the parser missed; parser fixed after this check"
+},
+"218": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"388": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"212": {
+"rule": "UNKNOWN",
+"hand": "EARNED",
+"why": "cited in the third ledger format with a display-form workflow name; parser fixed after this check"
+},
+"413": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"456": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"632": {
+"rule": "UNKNOWN",
+"hand": "UNKNOWN"
+},
+"104": {
+"rule": "NOCLAIM",
+"hand": "NOCLAIM",
+"why": "partly merged, part reported unmerged"
+},
+"125": {
+"rule": "NOCLAIM",
+"hand": "CLAIM"
+},
+"472": {
+"rule": "NOCLAIM",
+"hand": "CLAIM"
+},
+"37": {
+"rule": "NOCLAIM",
+"hand": "CLAIM"
+},
+"611": {
+"rule": "NOCLAIM",
+"hand": "NOCLAIM"
+},
+"36": {
+"rule": "NOCLAIM",
+"hand": "NOCLAIM"
+},
+"243": {
+"rule": "NOCLAIM",
+"hand": "NOCLAIM"
+},
+"374": {
+"rule": "NOCLAIM",
+"hand": "CLAIM"
+}
+}

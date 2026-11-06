@@ -1,0 +1,47 @@
+{
+ "all_workflows": {
+  "audit": 3,
+  "explore": 4,
+  "forge": 18,
+  "hoi": 56,
+  "improve": 4,
+  "jspace": 22,
+  "nms": 1,
+  "research": 5,
+  "robot30": 50,
+  "slopblock": 5,
+  "store": 22,
+  "system": 3,
+  "writeups": 6,
+  "youtube": 64,
+  "ytreal": 13
+ },
+ "by_status": {
+  "done": 232,
+  "failed": 13,
+  "stopped": 31
+ },
+ "claim_by_label": {
+  "EARNED": 99,
+  "UNEARNED": 2,
+  "UNKNOWN": 111
+ },
+ "claim_by_split_label": {
+  "dev/EARNED": 52,
+  "dev/UNKNOWN": 63,
+  "test/EARNED": 47,
+  "test/UNEARNED": 2,
+  "test/UNKNOWN": 48
+ },
+ "held_out_workflows": [
+  "forge",
+  "youtube",
+  "ytreal"
+ ],
+ "kept": 276,
+ "noclaim": 64,
+ "population_claim": 212,
+ "unearned_by_workflow": {
+  "youtube": 2
+ }
+}

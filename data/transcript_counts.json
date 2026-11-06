@@ -1,0 +1,14 @@
+{
+ "kept_with_transcript": 112,
+ "claim_with_transcript": 90,
+ "by_plan": {
+  "host": 26,
+  "vm": 86
+ },
+ "labeled_with_transcript": {
+  "UNKNOWN": 42,
+  "EARNED": 48
+ },
+ "test_earned_or_unearned_with_transcript": 12,
+ "unearned_ids_have_transcript": []
+}

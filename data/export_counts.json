@@ -1,0 +1,26 @@
+{
+ "all_closed": 506,
+ "by_workflow": {
+  "audit": 3,
+  "explore": 4,
+  "forge": 18,
+  "hoi": 56,
+  "improve": 4,
+  "jspace": 22,
+  "nms": 1,
+  "research": 5,
+  "robot30": 50,
+  "slopblock": 5,
+  "store": 22,
+  "system": 3,
+  "writeups": 6,
+  "youtube": 64,
+  "ytreal": 13
+ },
+ "dropped_privacy": 92,
+ "excluded_workflow": 138,
+ "kept": 276,
+ "kept_done": 232,
+ "kept_failed": 13,
+ "kept_stopped": 31
+}
