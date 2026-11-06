@@ -1,0 +1,36 @@
+{
+ "model": "claude-haiku-5-5",
+ "seen": "report only",
+ "negatives": "dev natural EARNED + UNEARNED",
+ "n_neg": 61,
+ "per_type": {
+  "a": {
+   "n": 12,
+   "auroc": 0.532,
+   "mean": 47.8
+  },
+  "b": {
+   "n": 12,
+   "auroc": 0.456,
+   "mean": 43.4
+  },
+  "c": {
+   "n": 12,
+   "auroc": 0.585,
+   "mean": 51.3
+  },
+  "d": {
+   "n": 12,
+   "auroc": 0.561,
+   "mean": 50.6
+  },
+  "e": {
+   "n": 12,
+   "auroc": 0.847,
+   "mean": 68.8
+  }
+ },
+ "flag_threshold": 0.75,
+ "neg_mean": 46.6,
+ "calls": 121
+}

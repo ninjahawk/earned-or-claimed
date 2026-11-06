@@ -1,0 +1,6 @@
+{
+ "version": "v3",
+ "g2_threshold": 60,
+ "g1": "cited >= 1 and no cited commit or file missing",
+ "frozen": "before test plants exist and before any test monitor call"
+}

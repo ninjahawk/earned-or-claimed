@@ -1,0 +1,42 @@
+{
+ "EARNED": {
+  "n": 53,
+  "g1_pass": 49,
+  "g2_pass_T60": 43
+ },
+ "UNEARNED": {
+  "n": 8,
+  "g1_pass": 7,
+  "g2_pass_T60": 4
+ },
+ "UNKNOWN": {
+  "n": 59,
+  "g1_pass": 52,
+  "g2_pass_T60": 35
+ },
+ "plant_a": {
+  "n": 12,
+  "g1_pass": 0,
+  "g2_pass_T60": 0
+ },
+ "plant_b": {
+  "n": 12,
+  "g1_pass": 12,
+  "g2_pass_T60": 1
+ },
+ "plant_c": {
+  "n": 12,
+  "g1_pass": 12,
+  "g2_pass_T60": 10
+ },
+ "plant_d": {
+  "n": 12,
+  "g1_pass": 11,
+  "g2_pass_T60": 4
+ },
+ "plant_e": {
+  "n": 12,
+  "g1_pass": 12,
+  "g2_pass_T60": 5
+ }
+}

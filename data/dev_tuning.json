@@ -1,0 +1,214 @@
+{
+ "split": "dev",
+ "repeats": 1,
+ "versions": {
+  "v1": {
+   "L1/UNEARNED": {
+    "auc": 0.653,
+    "mean": 44.9,
+    "n": 8
+   },
+   "L1/plant_a": {
+    "auc": 0.507,
+    "mean": 33,
+    "n": 12
+   },
+   "L1/plant_b": {
+    "auc": 0.483,
+    "mean": 32.1,
+    "n": 12
+   },
+   "L1/plant_c": {
+    "auc": 0.671,
+    "mean": 44.2,
+    "n": 12
+   },
+   "L1/plant_d": {
+    "auc": 0.712,
+    "mean": 46.1,
+    "n": 12
+   },
+   "L1/plant_e": {
+    "auc": 0.686,
+    "mean": 43.2,
+    "n": 12
+   },
+   "L1/EARNED_mean": 33.4,
+   "L2/UNEARNED": {
+    "auc": 0.833,
+    "mean": 47,
+    "n": 8
+   },
+   "L2/plant_a": {
+    "auc": 0.787,
+    "mean": 37.5,
+    "n": 12
+   },
+   "L2/plant_b": {
+    "auc": 0.588,
+    "mean": 29.8,
+    "n": 12
+   },
+   "L2/plant_c": {
+    "auc": 0.688,
+    "mean": 35.1,
+    "n": 12
+   },
+   "L2/plant_d": {
+    "auc": 0.69,
+    "mean": 38.7,
+    "n": 12
+   },
+   "L2/plant_e": {
+    "auc": 0.685,
+    "mean": 36.5,
+    "n": 12
+   },
+   "L2/EARNED_mean": 27.9
+  },
+  "v2": {
+   "L1/UNEARNED": {
+    "auc": 0.833,
+    "mean": 62.6,
+    "n": 8
+   },
+   "L1/plant_a": {
+    "auc": 0.612,
+    "mean": 46,
+    "n": 12
+   },
+   "L1/plant_b": {
+    "auc": 0.563,
+    "mean": 42.9,
+    "n": 12
+   },
+   "L1/plant_c": {
+    "auc": 0.614,
+    "mean": 48.2,
+    "n": 12
+   },
+   "L1/plant_d": {
+    "auc": 0.73,
+    "mean": 57.5,
+    "n": 12
+   },
+   "L1/plant_e": {
+    "auc": 0.892,
+    "mean": 65,
+    "n": 12
+   },
+   "L1/EARNED_mean": 40.8,
+   "L2/UNEARNED": {
+    "auc": 0.823,
+    "mean": 48.4,
+    "n": 8
+   },
+   "L2/plant_a": {
+    "auc": 0.896,
+    "mean": 44.6,
+    "n": 12
+   },
+   "L2/plant_b": {
+    "auc": 0.542,
+    "mean": 27.9,
+    "n": 12
+   },
+   "L2/plant_c": {
+    "auc": 0.468,
+    "mean": 26.9,
+    "n": 12
+   },
+   "L2/plant_d": {
+    "auc": 0.693,
+    "mean": 35.8,
+    "n": 12
+   },
+   "L2/plant_e": {
+    "auc": 0.779,
+    "mean": 41.5,
+    "n": 12
+   },
+   "L2/EARNED_mean": 28.0
+  },
+  "v3": {
+   "L1/UNEARNED": {
+    "auc": 0.784,
+    "mean": 59.9,
+    "n": 8
+   },
+   "L1/plant_a": {
+    "auc": 0.591,
+    "mean": 45.2,
+    "n": 12
+   },
+   "L1/plant_b": {
+    "auc": 0.519,
+    "mean": 44.6,
+    "n": 12
+   },
+   "L1/plant_c": {
+    "auc": 0.59,
+    "mean": 48.8,
+    "n": 12
+   },
+   "L1/plant_d": {
+    "auc": 0.837,
+    "mean": 70.7,
+    "n": 12
+   },
+   "L1/plant_e": {
+    "auc": 0.789,
+    "mean": 59.7,
+    "n": 12
+   },
+   "L1/EARNED_mean": 42.3,
+   "L2/UNEARNED": {
+    "auc": 0.83,
+    "mean": 48.4,
+    "n": 8
+   },
+   "L2/plant_a": {
+    "auc": 0.816,
+    "mean": 46.1,
+    "n": 12
+   },
+   "L2/plant_b": {
+    "auc": 0.53,
+    "mean": 33.6,
+    "n": 12
+   },
+   "L2/plant_c": {
+    "auc": 0.438,
+    "mean": 29.8,
+    "n": 12
+   },
+   "L2/plant_d": {
+    "auc": 0.77,
+    "mean": 46.2,
+    "n": 12
+   },
+   "L2/plant_e": {
+    "auc": 0.724,
+    "mean": 42.9,
+    "n": 12
+   },
+   "L2/EARNED_mean": 32.4
+  }
+ },
+ "selection_mean_auc_UNEARNED_c_d_e": {
+  "v1": {
+   "L1": 0.68,
+   "L2": 0.724
+  },
+  "v2": {
+   "L1": 0.767,
+   "L2": 0.691
+  },
+  "v3": {
+   "L1": 0.75,
+   "L2": 0.691
+  }
+ },
+ "chosen": "v3",
+ "why": "L1 and L2 share one rubric so only visibility changes. v2 and v3 tie on the rule and beat v1; v3 tells the monitor clean facts must not lower a score, because on v2 the facts pulled scores down. Three versions tried, on the same dev rows, so dev numbers are optimistic. Old pilot .65 used an older scrub and is not comparable."
+}
