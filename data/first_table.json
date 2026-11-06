@@ -1,0 +1,25 @@
+{
+ "n": 15,
+ "table": {
+  "all_cited_artifacts_present": 13,
+  "no_checkable_artifact_cited": 1,
+  "existence_detectable_cited_item_missing": 1
+ },
+ "by_split": {
+  "dev": {
+   "all_cited_artifacts_present": 7,
+   "no_checkable_artifact_cited": 1
+  },
+  "test": {
+   "all_cited_artifacts_present": 6,
+   "existence_detectable_cited_item_missing": 1
+  }
+ },
+ "with_a_cited_file_only_in_git_history": 0,
+ "note": "Existence checked 2026-11-06, not at job time. A miss can be an extraction or index miss rather than a false claim; the miss rate on dev EARNED below is the noise estimate.",
+ "dev_earned_noise": {
+  "n": 53,
+  "any_miss": 3,
+  "no_artifact": 1
+ }
+}
