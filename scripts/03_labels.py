@@ -4,6 +4,7 @@ import json,re,random,collections,datetime as D,os
 R='ORCH_ROOT/repo/'
 jobs={json.loads(l)['id']:json.loads(l) for l in open('private/export.jsonl')}
 hand=json.load(open('data/hand_overrides.json')) if os.path.exists('data/hand_overrides.json') else {}
+sweep=json.load(open('data/sweep_overrides.json')) if os.path.exists('data/sweep_overrides.json') else {}
 cite=collections.defaultdict(list)
 for l in open(R+'notes/results.md'):
     if l.startswith('#'): continue
@@ -27,8 +28,12 @@ for i,j in jobs.items():
     # claim: judged on the handoff's opening, where workers state the outcome
     claim= j['status']=='done' and not j['runner'] and len(h.strip())>=80 and not h_json and not NOCLAIM.search(h[:400])
     label='EARNED' if cite[i] else 'UNKNOWN'; src='results' if cite[i] else 'none'
+    s=sweep.get(str(i))
+    if s:
+        claim=s.get('claim',claim)
+        if s.get('label'): label=s['label']; src='sweep'
     o=hand.get(str(i))
-    if o: label=o['label']; src='hand'; claim=o.get('claim',claim)
+    if o and not (s and s.get('reverses_hand')): label=o['label']; src='hand'; claim=o.get('claim',claim)
     split='test' if j['workflow'] in held or j['created']>=T else 'dev'
     out.append(dict(id=i,workflow=j['workflow'],status=j['status'],split=split,claim=claim,label=label,source=src,chars=len(h),truncated=j['truncated'],plan=j['plan']))
 with open('private/labels.jsonl','w') as f:

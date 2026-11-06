@@ -1,0 +1,203 @@
+{
+ "104": {
+  "claim": true,
+  "via": "claim_reread"
+ },
+ "115": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "Robot30/docs/judges/VERDICT-P1.md:16 2026-10-27",
+   "Robot30/docs/judges/VERDICT-P1.md:16 2026-10-27"
+  ],
+  "source_class": [
+   "judge",
+   "judge"
+  ],
+  "via": "sweep_main"
+ },
+ "125": {
+  "claim": true,
+  "via": "claim_reread"
+ },
+ "159": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "notes/archive/robot30/2026-10-28.md:74 2026-10-27",
+   "notes/archive/robot30/2026-10-28.md:74 2026-10-27"
+  ],
+  "source_class": [
+   "judge",
+   "judge"
+  ],
+  "via": "sweep_main"
+ },
+ "205": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "Robot30/docs/judges/VERDICT-P2.md:14 2026-10-28",
+   "Robot30/docs/judges/VERDICT-P2.md:14 2026-10-28"
+  ],
+  "source_class": [
+   "judge",
+   "judge"
+  ],
+  "via": "sweep_main"
+ },
+ "235": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "notes/archive/robot30/2026-10-29.md:30 2026-10-29",
+   "notes/archive/robot30/2026-10-29.md:30 2026-10-29"
+  ],
+  "source_class": [
+   "judge",
+   "judge"
+  ],
+  "via": "sweep_main"
+ },
+ "243": {
+  "claim": true,
+  "via": "claim_reread"
+ },
+ "247": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "notes/archive/robot30/2026-10-29.md:42 2026-10-29",
+   "notes/archive/robot30/2026-10-29.md:42 2026-10-29"
+  ],
+  "source_class": [
+   "verifier_note",
+   "verifier_note"
+  ],
+  "via": "sweep_main"
+ },
+ "248": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "db:events:3424:1 2026-10-29",
+   "db:events:3424:1 2026-10-29"
+  ],
+  "source_class": [
+   "owner_defect",
+   "owner_defect"
+  ],
+  "via": "sweep_main"
+ },
+ "251": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "notes/archive/robot30/2026-10-29.md:48 2026-10-29",
+   "notes/archive/robot30/2026-10-29.md:48 2026-10-29"
+  ],
+  "source_class": [
+   "judge",
+   "judge"
+  ],
+  "via": "sweep_main"
+ },
+ "261": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "Robot30/docs/judges/VERDICT-P2-r6.md:48 2026-10-29",
+   "Robot30/docs/judges/VERDICT-P2-r6.md:48 2026-10-29"
+  ],
+  "source_class": [
+   "judge",
+   "judge"
+  ],
+  "via": "sweep_main"
+ },
+ "37": {
+  "claim": true,
+  "via": "claim_reread"
+ },
+ "374": {
+  "claim": true,
+  "via": "claim_reread"
+ },
+ "448": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "db:events:6193:1 2026-11-03",
+   "db:events:6193:1 2026-11-03"
+  ],
+  "source_class": [
+   "owner_defect",
+   "owner_defect"
+  ],
+  "via": "sweep_main"
+ },
+ "472": {
+  "claim": true,
+  "via": "claim_reread"
+ },
+ "527": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "db:runs:2289:1 2026-11-04",
+   "db:runs:2289:1 2026-11-04"
+  ],
+  "source_class": [
+   "judge",
+   "judge"
+  ],
+  "via": "sweep_main"
+ },
+ "53": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "notes/archive/store/2026-10-26.md:25 2026-10-26",
+   "notes/archive/store/2026-10-26.md:25 2026-10-26"
+  ],
+  "source_class": [
+   "verifier_note",
+   "verifier_note"
+  ],
+  "via": "sweep_main"
+ },
+ "569": {
+  "claim": true,
+  "via": "claim_reread"
+ },
+ "610": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "db:runs:2732:1 2026-11-05",
+   "db:runs:2732:1 2026-11-05"
+  ],
+  "source_class": [
+   "verifier_note",
+   "verifier_note"
+  ],
+  "via": "sweep_main"
+ },
+ "611": {
+  "claim": true,
+  "via": "claim_reread"
+ },
+ "632": {
+  "claim": true,
+  "label": "UNEARNED",
+  "ref": [
+   "reports/incidents/2026-11-06-failed-say-closed-live-hoi-floor.md:18 2026-11-06",
+   "reports/incidents/2026-11-06-failed-say-closed-live-hoi-floor.md:18 2026-11-06"
+  ],
+  "source_class": [
+   "incident",
+   "incident"
+  ],
+  "via": "sweep_main"
+ }
+}

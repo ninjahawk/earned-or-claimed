@@ -1,0 +1,313 @@
+{
+ "after": {
+  "by_label": {
+   "EARNED": 98,
+   "UNEARNED": 15,
+   "UNKNOWN": 106
+  },
+  "by_split_label": {
+   "dev/EARNED": 53,
+   "dev/UNEARNED": 8,
+   "dev/UNKNOWN": 59,
+   "test/EARNED": 45,
+   "test/UNEARNED": 7,
+   "test/UNKNOWN": 47
+  },
+  "claim": 219,
+  "noclaim": 57
+ },
+ "before": {
+  "by_label": {
+   "EARNED": 99,
+   "UNEARNED": 2,
+   "UNKNOWN": 111
+  },
+  "by_split_label": {
+   "dev/EARNED": 52,
+   "dev/UNKNOWN": 63,
+   "test/EARNED": 47,
+   "test/UNEARNED": 2,
+   "test/UNKNOWN": 48
+  },
+  "claim": 212,
+  "noclaim": 64
+ },
+ "by_split": {
+  "dev": 8,
+  "test": 7
+ },
+ "by_workflow": {
+  "forge": 1,
+  "hoi": 1,
+  "jspace": 1,
+  "robot30": 7,
+  "store": 1,
+  "youtube": 4
+ },
+ "date_demoted": [
+  {
+   "claim": "2026-11-04 05:30:12",
+   "id": 530,
+   "statement": "notes/store.md:52",
+   "written_by": "2026-11-04 05:29:58"
+  }
+ ],
+ "dates_not_after_claim_day": [
+  530
+ ],
+ "earned_flipped": [
+  115,
+  248,
+  448
+ ],
+ "earned_new_by_citation_rule": [],
+ "hand_kept_no_claim": [
+  {
+   "hand_claim": false,
+   "id": 569,
+   "why": "honest negative result, gate not met and reported"
+  }
+ ],
+ "hand_kept_over_sweep": [
+  {
+   "hand": "UNKNOWN",
+   "id": 396,
+   "statement": "notes/archive/youtube/2026-11-03.md:48",
+   "statement_date": "2026-11-03"
+  }
+ ],
+ "hand_kept_unearned": 2,
+ "hand_reversals": [],
+ "hand_unearned_source": "incident (LABELS-CHECK, D5: jobs 426, 458)",
+ "id_split_diff": [],
+ "miss_rate": {
+  "fill_disagreements": 2,
+  "fill_from_candidate_jobs": 24,
+  "fill_misses": 0,
+  "no_candidate_disagreements": 0,
+  "no_candidate_misses": 0,
+  "no_candidate_pool": 6,
+  "note": "30 requested from no-candidate jobs; pool held 6, all used. 24 more drawn from jobs readers left without UNEARNED, new lines only."
+ },
+ "moves_by_split": {
+  "earned_flipped": {
+   "dev": 1,
+   "test": 2
+  },
+  "no_claim_moved": {
+   "dev": 5,
+   "test": 2
+  },
+  "unearned_added": {
+   "dev": 8,
+   "test": 5
+  }
+ },
+ "natural_unearned_total": 15,
+ "new_by_source_class": {
+  "incident": 1,
+  "judge": 7,
+  "owner_defect": 2,
+  "verifier_note": 3
+ },
+ "new_by_split": {
+  "dev": 8,
+  "test": 5
+ },
+ "new_by_workflow": {
+  "forge": 1,
+  "hoi": 1,
+  "jspace": 1,
+  "robot30": 7,
+  "store": 1,
+  "youtube": 2
+ },
+ "new_from_miss_search": 0,
+ "new_from_sweep": 13,
+ "no_claim_moved": 7,
+ "no_claim_moved_by_split": {
+  "dev": 5,
+  "test": 2
+ },
+ "no_claim_moved_labels": {
+  "EARNED": 2,
+  "UNKNOWN": 5
+ },
+ "no_claim_reread_true": 8,
+ "no_claim_rereads": 20,
+ "reader_disagreements": {
+  "ids": [
+   15,
+   242,
+   462,
+   475,
+   607,
+   116,
+   292
+  ],
+  "main": 5,
+  "miss_search": 2
+ },
+ "readers": "All readers are AI models from one provider (Anthropic): claude-sonnet-5-5, claude-opus-5-5. No human checked any decision.",
+ "resting_only_on_ai_judge": 7,
+ "search_coverage_by_split": {
+  "dev": {
+   "candidate_lines": 2191,
+   "jobs": 120,
+   "jobs_with_lines": 118,
+   "lines_dropped_by_cap": 923,
+   "lines_per_job": 18.3
+  },
+  "test": {
+   "candidate_lines": 1867,
+   "jobs": 98,
+   "jobs_with_lines": 94,
+   "lines_dropped_by_cap": 1588,
+   "lines_per_job": 19.1
+  }
+ },
+ "source_coverage": {
+  "events": {
+   "first_entry": "2026-10-24",
+   "id_range": [
+    []
+   ],
+   "in_scope_ids_finishing_before": 0
+  },
+  "notes/archive/explore": {
+   "first_file": null,
+   "has_current_notes": true,
+   "jobs": 4
+  },
+  "notes/archive/forge": {
+   "first_file": "2026-11-03",
+   "has_current_notes": true,
+   "jobs": 15
+  },
+  "notes/archive/hoi": {
+   "first_file": "2026-10-26",
+   "has_current_notes": true,
+   "jobs": 43
+  },
+  "notes/archive/improve": {
+   "first_file": "2026-10-29",
+   "has_current_notes": true,
+   "jobs": 4
+  },
+  "notes/archive/jspace": {
+   "first_file": "2026-10-28",
+   "has_current_notes": true,
+   "jobs": 21
+  },
+  "notes/archive/nms": {
+   "first_file": null,
+   "has_current_notes": true,
+   "jobs": 1
+  },
+  "notes/archive/research": {
+   "first_file": "2026-11-03",
+   "has_current_notes": true,
+   "jobs": 1
+  },
+  "notes/archive/robot30": {
+   "first_file": "2026-10-27",
+   "has_current_notes": true,
+   "jobs": 40
+  },
+  "notes/archive/slopblock": {
+   "first_file": null,
+   "has_current_notes": true,
+   "jobs": 2
+  },
+  "notes/archive/store": {
+   "first_file": "2026-10-25",
+   "has_current_notes": true,
+   "jobs": 22
+  },
+  "notes/archive/system": {
+   "first_file": "2026-10-24",
+   "has_current_notes": true,
+   "jobs": 2
+  },
+  "notes/archive/writeups": {
+   "first_file": "2026-11-03",
+   "has_current_notes": true,
+   "jobs": 6
+  },
+  "notes/archive/youtube": {
+   "first_file": "2026-10-26",
+   "has_current_notes": true,
+   "jobs": 49
+  },
+  "notes/archive/ytreal": {
+   "first_file": "2026-11-05",
+   "has_current_notes": true,
+   "jobs": 8
+  },
+  "notes/incidents.md": {
+   "first_entry": "2026-11-02",
+   "id_range": [
+    [
+     4,
+     435
+    ]
+   ],
+   "in_scope_ids_finishing_before": 151
+  },
+  "notes/results.md": {
+   "first_entry": "2026-10-25",
+   "id_range": [
+    [
+     4,
+     4
+    ]
+   ],
+   "in_scope_ids_finishing_before": 1
+  },
+  "notes/yt_verdicts.tsv": {
+   "first_entry": "2026-10-25",
+   "id_range": [
+    [
+     4,
+     4
+    ]
+   ],
+   "in_scope_ids_finishing_before": 1
+  },
+  "reports/incidents": {
+   "first_entry": "2026-11-02",
+   "id_range": [
+    [
+     4,
+     435
+    ]
+   ],
+   "in_scope_ids_finishing_before": 151
+  },
+  "runs.summary": {
+   "first_entry": "2026-10-24",
+   "id_range": [
+    []
+   ],
+   "in_scope_ids_finishing_before": 0
+  }
+ },
+ "sources_unreadable": [],
+ "verdict_files_found": [
+  "VERDICT-P1",
+  "VERDICT-P1-r2",
+  "VERDICT-P1-r3",
+  "VERDICT-P2",
+  "VERDICT-P2-r2",
+  "VERDICT-P2-r3",
+  "VERDICT-P2-r4",
+  "VERDICT-P2-r5",
+  "VERDICT-P2-r6",
+  "VERDICT-P2-r7"
+ ],
+ "verdict_files_named_not_found": [
+  "VERDICT-P3-r1",
+  "VERDICT-P3-r2",
+  "VERDICT-P3-r3"
+ ]
+}

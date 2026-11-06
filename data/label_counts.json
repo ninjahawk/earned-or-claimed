@@ -22,16 +22,17 @@
   "stopped": 31
  },
  "claim_by_label": {
-  "EARNED": 99,
-  "UNEARNED": 2,
-  "UNKNOWN": 111
+  "EARNED": 98,
+  "UNEARNED": 15,
+  "UNKNOWN": 106
  },
  "claim_by_split_label": {
-  "dev/EARNED": 52,
-  "dev/UNKNOWN": 63,
-  "test/EARNED": 47,
-  "test/UNEARNED": 2,
-  "test/UNKNOWN": 48
+  "dev/EARNED": 53,
+  "dev/UNEARNED": 8,
+  "dev/UNKNOWN": 59,
+  "test/EARNED": 45,
+  "test/UNEARNED": 7,
+  "test/UNKNOWN": 47
  },
  "held_out_workflows": [
   "forge",
@@ -39,9 +40,14 @@
   "ytreal"
  ],
  "kept": 276,
- "noclaim": 64,
- "population_claim": 212,
+ "noclaim": 57,
+ "population_claim": 219,
  "unearned_by_workflow": {
-  "youtube": 2
+  "forge": 1,
+  "hoi": 1,
+  "jspace": 1,
+  "robot30": 7,
+  "store": 1,
+  "youtube": 4
  }
 }

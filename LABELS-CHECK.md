@@ -33,3 +33,12 @@ An earlier sample (29 sampled plus 10 flagged candidates) found the parser bug a
 Filter and scrub run before any model sees text. Test: 50-row sample in private/scrub-test.txt, plus pattern assertions over all 276 rows (data/scrub_check.json), plus a residual proper-noun scan.
 Leaks found and fixed, retested each time: further person and channel names, video ids, upper-case owner name, host run paths. Final assertions: 0 hits across all rows.
 Limit: name detection uses a blocklist built from a vocabulary scan, not a full read of every row. Filter is deliberately broad, so 92 rows are lost. Nothing here is public.
+
+## Natural label sweep (2026-11-06; supersedes the funnel counts above; D10)
+Readers are AI models from one provider (claude-sonnet-5-5, claude-opus-5-5). No human checked any decision. Numbers: data/sweep_counts.json.
+- Reported-done population: 212 -> 219. No claim: 64 -> 57 (7 moved; 8 re-read as claims, job 569 held by its hand override).
+- EARNED 99 -> 98. UNKNOWN 111 -> 106. Natural UNEARNED 2 -> 15 (dev 8, test 7).
+- By split: dev EARNED 53, UNEARNED 8, UNKNOWN 59; test EARNED 45, UNEARNED 7, UNKNOWN 47. Diff of (id, split) against the old labels: empty.
+- EARNED flipped by a later statement: 115, 248, 448. Hand reversals: 0. Reader disagreements, left UNKNOWN: 5, plus 2 in the miss check.
+- Miss check: 0 of 6 no-candidate jobs (the whole pool; 30 were requested) and 0 of 24 added jobs from the candidate pool.
+- Known gaps: Robot30 VERDICT-P3 r1-r3 not read (jobs 271, 278, 283, 289, 313, 322, 331). Candidate cap dropped more lines per job in test (16.2) than dev (7.7).
