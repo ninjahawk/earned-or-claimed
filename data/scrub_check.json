@@ -3,7 +3,7 @@
  "hits_all_rows": {
   "email": 0,
   "handle": 0,
-  "owner": 1,
+  "owner": 0,
   "win_path": 0,
   "desktop_path": 0,
   "mnt_path": 0,
@@ -18,7 +18,7 @@
  "hits_50_row_sample": {
   "email": 0,
   "handle": 0,
-  "owner": 1,
+  "owner": 0,
   "win_path": 0,
   "desktop_path": 0,
   "mnt_path": 0,
