@@ -1,0 +1,33 @@
+{
+ "rows_all": 276,
+ "hits_all_rows": {
+  "email": 0,
+  "handle": 0,
+  "owner": 1,
+  "win_path": 0,
+  "desktop_path": 0,
+  "mnt_path": 0,
+  "channel": 0,
+  "store": 0,
+  "url": 0,
+  "ip": 0,
+  "excluded_terms": 0,
+  "finance": 0,
+  "host_run_path": 0
+ },
+ "hits_50_row_sample": {
+  "email": 0,
+  "handle": 0,
+  "owner": 1,
+  "win_path": 0,
+  "desktop_path": 0,
+  "mnt_path": 0,
+  "channel": 0,
+  "store": 0,
+  "url": 0,
+  "ip": 0,
+  "excluded_terms": 0,
+  "finance": 0,
+  "host_run_path": 0
+ }
+}

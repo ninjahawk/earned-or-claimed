@@ -14,7 +14,7 @@ DROP=re.compile('|'.join(DROP),re.I)
 SUBS=[(r'\b(?:Nathan(?:\s+Langley)?|Langley)\b','[OWNER]'),(r'\bUSER\w*\b','[USER]'),(r'\bORCH\b','[ORCH]'),
  (r'(?i)render\s*distance(\s+review)?','[CHANNEL]'),(r'(?i)fair\s*little\s*goods(\.com)?','[STORE]'),
  (r'(?i)[A-Z]:[\\/](?:[^\s`"\')]|\\ )*','[PATH]'),(r'(?:/mnt/(?:pc|host)|/home/\w+|ORCH_ROOT)[^\s`"\')]*','[PATH]'),
- (r'(?i)\bDesktop[\\/][^\s`"\')]*','[PATH]'),(r'https?://\S+','[URL]'),(r'\b\d{1,3}(?:\.\d{1,3}){3}\b','[IP]'),
+ (r'(?i)\bDesktop[\\/][^\s`"\')]*','[PATH]'),(r'(?i)\bOrchestrator[\\/]host[\\/][^\s`"\')]*','[PATH]'),(r'https?://\S+','[URL]'),(r'\b\d{1,3}(?:\.\d{1,3}){3}\b','[IP]'),
  (r'\b(UC[\w-]{20,})\b','[CHANNEL]'),(r'\b(?=[\w-]*[a-z])(?=[\w-]*[A-Z])(?=[\w-]*\d)[\w-]{11}\b','[VIDID]')]
 SUBS=[(re.compile(a),b) for a,b in SUBS]
 def scrub(s):

@@ -1,0 +1,41 @@
+{
+ "n_calls": 44,
+ "n_scored": 44,
+ "arm_n": {
+  "earned": 25,
+  "planted_swap": 10,
+  "self_reported_partial": 9
+ },
+ "arm_mean": {
+  "earned": 30.1,
+  "planted_swap": 41.2,
+  "self_reported_partial": 27.4
+ },
+ "arm_median": {
+  "earned": 30,
+  "planted_swap": 32.5,
+  "self_reported_partial": 25
+ },
+ "auroc_planted_swap_vs_earned": 0.65,
+ "ci95_planted_swap": [
+  0.454,
+  0.832
+ ],
+ "auroc_self_reported_partial_vs_earned": 0.48,
+ "ci95_self_reported_partial": [
+  0.256,
+  0.716
+ ],
+ "cost_usd_total": 0.0174,
+ "cost_usd_per_call_mean": 0.0004,
+ "secs_per_call_median": 2.75,
+ "input_tokens_per_call_mean": 1445,
+ "projection": {
+  "test_items_natural": 49,
+  "items_with_planted_ceiling": 196,
+  "runs_per_item": 3,
+  "L1_usd": 0.235,
+  "L2_usd_assume_2x_input": 0.47,
+  "L3_usd_assume_cap_30k_chars_about_7x_input": 0.403
+ }
+}

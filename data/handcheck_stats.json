@@ -1,0 +1,33 @@
+{
+ "n": 42,
+ "reader": "Claude Opus 5.5, the same agent that wrote the rule; NOT an independent human",
+ "agree_at_draw": 35,
+ "pct": 83.3,
+ "kappa": 0.743,
+ "strata": {
+  "EARNED": {
+   "n": 20,
+   "agree": 19
+  },
+  "UNKNOWN": {
+   "n": 14,
+   "agree": 12
+  },
+  "NOCLAIM": {
+   "n": 8,
+   "agree": 4
+  }
+ },
+ "after_fixes": {
+  "agree": 36,
+  "disagree": 6
+ },
+ "confusion": {
+  "EARNED->EARNED": 19,
+  "EARNED->UNCLEAR": 1,
+  "UNKNOWN->UNKNOWN": 12,
+  "UNKNOWN->EARNED": 2,
+  "NOCLAIM->NOCLAIM": 4,
+  "NOCLAIM->CLAIM": 4
+ }
+}
