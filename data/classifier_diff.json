@@ -1,0 +1,16 @@
+{
+ "diff": [],
+ "dev_diff": 0,
+ "test_diff": 0,
+ "raw_regex_agreement_with_reread_on_dev": {
+  "old": {
+   "agree_on_dev_old_fires": 5,
+   "n": 10
+  },
+  "new": {
+   "agree_on_dev_old_fires": 8,
+   "n": 10
+  }
+ },
+ "note": "New regex is tuned on these same dev rows, so its agreement is not an estimate. Reference claims are the AI re-read and hand overrides, no human."
+}
