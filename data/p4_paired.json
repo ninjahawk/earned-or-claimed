@@ -1,0 +1,68 @@
+{
+ "n_d": 15,
+ "n_EARNED": 45,
+ "auroc": {
+  "Haiku omnibus": [
+   0.645,
+   0.485,
+   0.785
+  ],
+  "Sonnet omnibus": [
+   0.889,
+   0.774,
+   0.972
+  ],
+  "Opus omnibus": [
+   0.936,
+   0.824,
+   0.999
+  ],
+  "Haiku task-match": [
+   0.897,
+   0.807,
+   0.973
+  ],
+  "Sonnet task-match": [
+   0.95,
+   0.881,
+   0.997
+  ],
+  "Word overlap (no model)": [
+   0.842,
+   0.723,
+   0.943
+  ]
+ },
+ "diff": {
+  "Haiku task-match - Haiku omnibus": [
+   0.252,
+   0.141,
+   0.378
+  ],
+  "Haiku task-match - Word overlap (no model)": [
+   0.055,
+   -0.08,
+   0.199
+  ],
+  "Sonnet task-match - Word overlap (no model)": [
+   0.107,
+   0.0,
+   0.232
+  ],
+  "Word overlap (no model) - Haiku omnibus": [
+   0.197,
+   0.013,
+   0.387
+  ],
+  "Sonnet omnibus - Haiku omnibus": [
+   0.244,
+   0.134,
+   0.357
+  ],
+  "Sonnet task-match - Sonnet omnibus": [
+   0.061,
+   -0.006,
+   0.15
+  ]
+ }
+}
