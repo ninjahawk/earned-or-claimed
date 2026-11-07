@@ -54,3 +54,4 @@ All below are logged after the runs named; none changes a score, an arm or a rul
 - DP3-4 Natural rows in the one table use phase 2's bootstrap (classes resampled apart by job, DP4), so they reproduce its CIs exactly. Sonnet and Opus use the same.
 - DP3-5 L3 excerpt: the scrub test found one owner-name miss (a literal backslash-n before the name). Fixed before the dev pass; no monitor saw it.
 - DP3-6 G2's MOVE cell tests only the stronger model's scale, as written above. Haiku's own EARNED mean L1 (47.86) also fails the 40 limit, so the baseline rate is descriptive too. The rule isn't changed; RESULTS-P3 states it beside the MOVE.
+- DP3-7 Step 5, before its first call. Prompt ab1, Haiku and Sonnet, dev at 1 repeat on plants c, d, e, natural UNEARNED, EARNED; at most one revision; frozen by commit; test all 127 at 3 repeats. Reported in one table, AUROC vs EARNED, CI as above, natural apart. No PASS bar, no MOVE, in no reading: a text check, not an evidence result.
