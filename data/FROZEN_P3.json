@@ -1,0 +1,10 @@
+{
+ "task_match": "tm1",
+ "dev": {
+  "haiku_auroc_d_vs_earned": 0.944,
+  "sonnet_auroc_d_vs_earned": 0.997,
+  "n": "12 plant d vs 53 EARNED, 1 repeat"
+ },
+ "revisions": 0,
+ "frozen": "on dev only, before any task-match test call"
+}
