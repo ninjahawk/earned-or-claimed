@@ -1,0 +1,138 @@
+{
+ "n_d": 13,
+ "n_EARNED": 35,
+ "reps": {
+  "omni_2000 (phase 2, 3 reps)": [
+   0,
+   1,
+   2
+  ],
+  "omni_full (P3 [:12000], 3 reps)": [
+   0,
+   1,
+   2
+  ],
+  "omni_full (P5 no cap, 3 reps)": [
+   0,
+   1,
+   2
+  ],
+  "tm_2000 (P3+P4, 5 reps)": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "tm_full (P5 no cap, 3 reps)": [
+   0,
+   1,
+   2
+  ]
+ },
+ "auroc": {
+  "omni_2000 (phase 2, 3 reps)": [
+   0.615,
+   0.429,
+   0.776
+  ],
+  "omni_full (P3 [:12000], 3 reps)": [
+   0.738,
+   0.565,
+   0.883
+  ],
+  "omni_full (P5 no cap, 3 reps)": [
+   0.68,
+   0.499,
+   0.851
+  ],
+  "tm_2000 (P3+P4, 5 reps)": [
+   0.893,
+   0.797,
+   0.975
+  ],
+  "tm_full (P5 no cap, 3 reps)": [
+   0.927,
+   0.779,
+   1.0
+  ]
+ },
+ "per_repeat": {
+  "omni_2000 (phase 2, 3 reps)": [
+   0.609,
+   0.604,
+   0.603
+  ],
+  "omni_full (P3 [:12000], 3 reps)": [
+   0.681,
+   0.768,
+   0.722
+  ],
+  "omni_full (P5 no cap, 3 reps)": [
+   0.657,
+   0.652,
+   0.696
+  ],
+  "tm_2000 (P3+P4, 5 reps)": [
+   0.833,
+   0.777,
+   0.858,
+   0.859,
+   0.893
+  ],
+  "tm_full (P5 no cap, 3 reps)": [
+   0.931,
+   0.815,
+   0.905
+  ]
+ },
+ "earned_mean": {
+  "omni_2000 (phase 2, 3 reps)": 47.79,
+  "omni_full (P3 [:12000], 3 reps)": 33.02,
+  "omni_full (P5 no cap, 3 reps)": 34.04,
+  "tm_2000 (P3+P4, 5 reps)": 9.62,
+  "tm_full (P5 no cap, 3 reps)": 5.09
+ },
+ "paired": {
+  "omni_full (P5 no cap, 3 reps) - omni_2000 (phase 2, 3 reps)": {
+   "diff": 0.065,
+   "ci": [
+    -0.087,
+    0.232
+   ],
+   "sd": 0.0795
+  },
+  "tm_full (P5 no cap, 3 reps) - tm_2000 (P3+P4, 5 reps)": {
+   "diff": 0.034,
+   "ci": [
+    -0.153,
+    0.181
+   ],
+   "sd": 0.083
+  },
+  "tm_full (P5 no cap, 3 reps) - omni_full (P5 no cap, 3 reps)": {
+   "diff": 0.247,
+   "ci": [
+    0.016,
+    0.469
+   ],
+   "sd": 0.1153
+  },
+  "tm_2000 (P3+P4, 5 reps) - omni_2000 (phase 2, 3 reps)": {
+   "diff": 0.278,
+   "ci": [
+    0.145,
+    0.438
+   ],
+   "sd": 0.0732
+  },
+  "omni_full (P5 no cap, 3 reps) - omni_full (P3 [:12000], 3 reps)": {
+   "diff": -0.058,
+   "ci": [
+    -0.165,
+    0.072
+   ],
+   "sd": 0.0606
+  }
+ }
+}
