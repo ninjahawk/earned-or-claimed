@@ -1,0 +1,125 @@
+{
+ "per_label_split": {
+  "dev/EARNED": {
+   "n": 53,
+   "stored_cut_ge_1500": 50,
+   "full_found": 51,
+   "full_longer_than_stored": 34,
+   "transcript_verified": 51,
+   "transcript_old_map": 37,
+   "transcript_any": 52,
+   "plan_vm": 30
+  },
+  "dev/UNEARNED": {
+   "n": 8,
+   "stored_cut_ge_1500": 6,
+   "full_found": 7,
+   "full_longer_than_stored": 5,
+   "transcript_verified": 7,
+   "transcript_old_map": 4,
+   "transcript_any": 7,
+   "plan_vm": 3
+  },
+  "dev/UNKNOWN": {
+   "n": 59,
+   "stored_cut_ge_1500": 54,
+   "full_found": 57,
+   "full_longer_than_stored": 49,
+   "transcript_verified": 57,
+   "transcript_old_map": 31,
+   "transcript_any": 57,
+   "plan_vm": 29
+  },
+  "test/EARNED": {
+   "n": 45,
+   "stored_cut_ge_1500": 39,
+   "full_found": 42,
+   "full_longer_than_stored": 37,
+   "transcript_verified": 42,
+   "transcript_old_map": 11,
+   "transcript_any": 42,
+   "plan_vm": 4
+  },
+  "test/UNEARNED": {
+   "n": 7,
+   "stored_cut_ge_1500": 6,
+   "full_found": 7,
+   "full_longer_than_stored": 6,
+   "transcript_verified": 7,
+   "transcript_old_map": 1,
+   "transcript_any": 7,
+   "plan_vm": 1
+  },
+  "test/UNKNOWN": {
+   "n": 47,
+   "stored_cut_ge_1500": 39,
+   "full_found": 42,
+   "full_longer_than_stored": 35,
+   "transcript_verified": 42,
+   "transcript_old_map": 12,
+   "transcript_any": 42,
+   "plan_vm": 11
+  }
+ },
+ "how_covered_differs": {
+  "covered": {
+   "n": 166,
+   "plan": {
+    "host": 111,
+    "vm": 55
+   },
+   "workflow": {
+    "youtube": 41,
+    "robot30": 31,
+    "hoi": 22,
+    "jspace": 19,
+    "store": 14,
+    "forge": 12,
+    "ytreal": 7,
+    "writeups": 6,
+    "improve": 4,
+    "explore": 4,
+    "slopblock": 2,
+    "system": 2,
+    "nms": 1,
+    "research": 1
+   },
+   "label": {
+    "UNKNOWN": 84,
+    "UNEARNED": 11,
+    "EARNED": 71
+   },
+   "stored_chars_median": 1501.0
+  },
+  "not_covered": {
+   "n": 53,
+   "plan": {
+    "host": 30,
+    "vm": 23
+   },
+   "workflow": {
+    "hoi": 21,
+    "youtube": 10,
+    "robot30": 9,
+    "store": 8,
+    "jspace": 2,
+    "forge": 2,
+    "ytreal": 1
+   },
+   "label": {
+    "UNKNOWN": 22,
+    "EARNED": 27,
+    "UNEARNED": 4
+   },
+   "stored_chars_median": 1501
+  }
+ },
+ "kinds": {
+  "transcript": 206
+ },
+ "scanned": {
+  "vm": 6225,
+  "pc": 2236
+ },
+ "note": "full_found = stored report found at the end of a longer or equal text. Only full_longer_than_stored items can differ between truncated and full. transcript_verified = final assistant text ends in the stored report; transcript_old_map = private/transcripts.json, built before D10."
+}

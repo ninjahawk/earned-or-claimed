@@ -1,0 +1,56 @@
+{
+ "by_label": {
+  "EARNED": {
+   "n": 93,
+   "longer": 71,
+   "sent_removed": 198,
+   "items_filter_caught": 54,
+   "verif_left_after_filter": 0,
+   "items_wide_hit": 19,
+   "items_wide_hit_not_in_stored": 6,
+   "privacy_drop_hit": 2,
+   "items_quoting_label_source": 16,
+   "max_shingles_quoted": 5
+  },
+  "UNEARNED": {
+   "n": 14,
+   "longer": 11,
+   "sent_removed": 33,
+   "items_filter_caught": 10,
+   "verif_left_after_filter": 0,
+   "items_wide_hit": 4,
+   "items_wide_hit_not_in_stored": 1,
+   "privacy_drop_hit": 0,
+   "items_quoting_label_source": 1,
+   "max_shingles_quoted": 2
+  },
+  "UNKNOWN": {
+   "n": 99,
+   "longer": 84,
+   "sent_removed": 280,
+   "items_filter_caught": 71,
+   "verif_left_after_filter": 0,
+   "items_wide_hit": 15,
+   "items_wide_hit_not_in_stored": 4,
+   "privacy_drop_hit": 4,
+   "items_quoting_label_source": 1,
+   "max_shingles_quoted": 5
+  }
+ },
+ "eligible": {
+  "dev/EARNED/covered_longer": 34,
+  "dev/EARNED/usable_longer_no_drop": 34,
+  "test/EARNED/covered_longer": 37,
+  "test/EARNED/usable_longer_no_drop": 35,
+  "dev/UNEARNED/covered_longer": 5,
+  "dev/UNEARNED/usable_longer_no_drop": 5,
+  "test/UNEARNED/covered_longer": 6,
+  "test/UNEARNED/usable_longer_no_drop": 6,
+  "dev/UNKNOWN/covered_longer": 49,
+  "dev/UNKNOWN/usable_longer_no_drop": 46,
+  "test/UNKNOWN/covered_longer": 35,
+  "test/UNKNOWN/usable_longer_no_drop": 34,
+  "test/plant_d/usable_longer_no_drop": 13
+ },
+ "wide_regex": "unearned|sentinel|true.positive|false.positive|\\baudit|\\bverif(y|ied|ication)\\b|\\breject|\\bflagged\\b|post.?mortem|caught by|fails? review|\\bre-?run\\b.*\\b(because|after)\\b|\\borchestrator (said|found|rejected)\\b"
+}

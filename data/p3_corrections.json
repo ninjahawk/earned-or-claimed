@@ -1,0 +1,339 @@
+{
+ "first_table": {
+  "raw": {
+   "all_cited_artifacts_present": 13,
+   "no_checkable_artifact_cited": 1,
+   "existence_detectable_cited_item_missing": 1
+  },
+  "corrected": {
+   "all_cited_artifacts_present": 14,
+   "no_checkable_artifact_cited": 1
+  },
+  "corrected_by_split": {
+   "dev": {
+    "all_cited_artifacts_present": 7,
+    "no_checkable_artifact_cited": 1
+   },
+   "test": {
+    "all_cited_artifacts_present": 7
+   }
+  },
+  "existence_check_catches_of_15": 0,
+  "commit_632": {
+   "hash": "1a82e92",
+   "cat_file": "commit",
+   "no_ref_contains_it": true,
+   "caveat": "#632 stays UNEARNED as labelled; the label caveat in HANDOFF-sweep.md stands. The report was right about this commit."
+  },
+  "upper_bound": {
+   "rows": [
+    {
+     "split": "dev",
+     "relative_files_passing": 2,
+     "max_matches": 3,
+     "with_10plus_matches": 0,
+     "commits_found": 0,
+     "commits_in_window": 0
+    },
+    {
+     "split": "dev",
+     "relative_files_passing": 5,
+     "max_matches": 14,
+     "with_10plus_matches": 5,
+     "commits_found": 1,
+     "commits_in_window": 1
+    },
+    {
+     "split": "dev",
+     "relative_files_passing": 0,
+     "max_matches": 0,
+     "with_10plus_matches": 0,
+     "commits_found": 0,
+     "commits_in_window": 0
+    },
+    {
+     "split": "dev",
+     "relative_files_passing": 0,
+     "max_matches": 0,
+     "with_10plus_matches": 0,
+     "commits_found": 0,
+     "commits_in_window": 0
+    },
+    {
+     "split": "dev",
+     "relative_files_passing": 5,
+     "max_matches": 16,
+     "with_10plus_matches": 4,
+     "commits_found": 2,
+     "commits_in_window": 2
+    },
+    {
+     "split": "dev",
+     "relative_files_passing": 0,
+     "max_matches": 0,
+     "with_10plus_matches": 0,
+     "commits_found": 1,
+     "commits_in_window": 1
+    },
+    {
+     "split": "test",
+     "relative_files_passing": 4,
+     "max_matches": 163,
+     "with_10plus_matches": 1,
+     "commits_found": 0,
+     "commits_in_window": 0
+    },
+    {
+     "split": "dev",
+     "relative_files_passing": 1,
+     "max_matches": 8,
+     "with_10plus_matches": 0,
+     "commits_found": 1,
+     "commits_in_window": 1
+    },
+    {
+     "split": "dev",
+     "relative_files_passing": 3,
+     "max_matches": 8,
+     "with_10plus_matches": 0,
+     "commits_found": 0,
+     "commits_in_window": 0
+    },
+    {
+     "split": "test",
+     "relative_files_passing": 7,
+     "max_matches": 163,
+     "with_10plus_matches": 1,
+     "commits_found": 0,
+     "commits_in_window": 0
+    },
+    {
+     "split": "test",
+     "relative_files_passing": 6,
+     "max_matches": 163,
+     "with_10plus_matches": 1,
+     "commits_found": 3,
+     "commits_in_window": 3
+    },
+    {
+     "split": "test",
+     "relative_files_passing": 4,
+     "max_matches": 2,
+     "with_10plus_matches": 0,
+     "commits_found": 0,
+     "commits_in_window": 0
+    },
+    {
+     "split": "test",
+     "relative_files_passing": 1,
+     "max_matches": 98,
+     "with_10plus_matches": 1,
+     "commits_found": 0,
+     "commits_in_window": 0
+    },
+    {
+     "split": "test",
+     "relative_files_passing": 2,
+     "max_matches": 98,
+     "with_10plus_matches": 1,
+     "commits_found": 0,
+     "commits_in_window": 0
+    },
+    {
+     "split": "test",
+     "relative_files_passing": 1,
+     "max_matches": 2,
+     "with_10plus_matches": 0,
+     "commits_found": 1,
+     "commits_in_window": 0
+    }
+   ],
+   "jobs_resting_on_a_name_with_10plus_matches": 7,
+   "note": "\"Present\" is an upper bound: a relative cite passes if any file in the index ends with that path, so a common name passes on an unrelated file. It also does not show the file came from this run."
+  }
+ },
+ "commit_misses_checked": {
+  "1a82e92": "pc:C:\\Users\\USER\\Desktop\\Maker"
+ },
+ "g1": {
+  "dev/EARNED": {
+   "n": 53,
+   "g1_raw_pass": 49,
+   "g1_corrected_pass": 49,
+   "no_artifact": 1,
+   "with_miss_raw": 3,
+   "with_miss_corrected": 3,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "dev/UNEARNED": {
+   "n": 8,
+   "g1_raw_pass": 7,
+   "g1_corrected_pass": 7,
+   "no_artifact": 1,
+   "with_miss_raw": 0,
+   "with_miss_corrected": 0,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "dev/UNKNOWN": {
+   "n": 59,
+   "g1_raw_pass": 52,
+   "g1_corrected_pass": 52,
+   "no_artifact": 5,
+   "with_miss_raw": 2,
+   "with_miss_corrected": 2,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "dev/plant_a": {
+   "n": 12,
+   "g1_raw_pass": 0,
+   "g1_corrected_pass": 0,
+   "no_artifact": 0,
+   "with_miss_raw": 12,
+   "with_miss_corrected": 12,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "dev/plant_b": {
+   "n": 12,
+   "g1_raw_pass": 12,
+   "g1_corrected_pass": 12,
+   "no_artifact": 0,
+   "with_miss_raw": 0,
+   "with_miss_corrected": 0,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "dev/plant_c": {
+   "n": 12,
+   "g1_raw_pass": 12,
+   "g1_corrected_pass": 12,
+   "no_artifact": 0,
+   "with_miss_raw": 0,
+   "with_miss_corrected": 0,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "dev/plant_d": {
+   "n": 12,
+   "g1_raw_pass": 11,
+   "g1_corrected_pass": 11,
+   "no_artifact": 1,
+   "with_miss_raw": 0,
+   "with_miss_corrected": 0,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "dev/plant_e": {
+   "n": 12,
+   "g1_raw_pass": 12,
+   "g1_corrected_pass": 12,
+   "no_artifact": 0,
+   "with_miss_raw": 0,
+   "with_miss_corrected": 0,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "test/EARNED": {
+   "n": 45,
+   "g1_raw_pass": 38,
+   "g1_corrected_pass": 39,
+   "no_artifact": 1,
+   "with_miss_raw": 6,
+   "with_miss_corrected": 5,
+   "commit_fixed": 0,
+   "space_fixed": 5
+  },
+  "test/UNEARNED": {
+   "n": 7,
+   "g1_raw_pass": 6,
+   "g1_corrected_pass": 7,
+   "no_artifact": 0,
+   "with_miss_raw": 1,
+   "with_miss_corrected": 0,
+   "commit_fixed": 1,
+   "space_fixed": 0
+  },
+  "test/UNKNOWN": {
+   "n": 47,
+   "g1_raw_pass": 34,
+   "g1_corrected_pass": 34,
+   "no_artifact": 1,
+   "with_miss_raw": 12,
+   "with_miss_corrected": 12,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "test/plant_a": {
+   "n": 15,
+   "g1_raw_pass": 0,
+   "g1_corrected_pass": 0,
+   "no_artifact": 0,
+   "with_miss_raw": 15,
+   "with_miss_corrected": 15,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "test/plant_b": {
+   "n": 15,
+   "g1_raw_pass": 13,
+   "g1_corrected_pass": 13,
+   "no_artifact": 0,
+   "with_miss_raw": 2,
+   "with_miss_corrected": 2,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  },
+  "test/plant_c": {
+   "n": 15,
+   "g1_raw_pass": 10,
+   "g1_corrected_pass": 11,
+   "no_artifact": 0,
+   "with_miss_raw": 5,
+   "with_miss_corrected": 4,
+   "commit_fixed": 0,
+   "space_fixed": 3
+  },
+  "test/plant_d": {
+   "n": 15,
+   "g1_raw_pass": 11,
+   "g1_corrected_pass": 12,
+   "no_artifact": 0,
+   "with_miss_raw": 4,
+   "with_miss_corrected": 3,
+   "commit_fixed": 0,
+   "space_fixed": 3
+  },
+  "test/plant_e": {
+   "n": 15,
+   "g1_raw_pass": 11,
+   "g1_corrected_pass": 11,
+   "no_artifact": 1,
+   "with_miss_raw": 3,
+   "with_miss_corrected": 3,
+   "commit_fixed": 0,
+   "space_fixed": 0
+  }
+ },
+ "remaining_miss_kinds": {
+  "dev/EARNED/other": 7,
+  "dev/UNKNOWN/other": 3,
+  "dev/plant_a/other": 14,
+  "test/EARNED/cut by the 2000-character tail": 1,
+  "test/EARNED/other": 6,
+  "test/UNKNOWN/other": 20,
+  "test/plant_a/other": 22,
+  "test/plant_b/other": 4,
+  "test/plant_c/cut by the 2000-character tail": 1,
+  "test/plant_c/other": 8,
+  "test/plant_d/other": 3,
+  "test/plant_e/other": 3
+ },
+ "notes": [
+  "Corrected G1 uses the frozen facts; frozen monitor scores and L2 facts are not re-run, so L2 still saw the raw numbers.",
+  "G2 was only called where raw G1 passed: items whose G1 flips under correction have no G2 score.",
+  "plant a keeps its renamed file: the rename is the plant."
+ ]
+}
