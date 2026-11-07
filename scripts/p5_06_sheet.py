@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """P5 step 4: second-reader sheet for Nathan, PRIVATE. All 15 natural UNEARNED (dev+test) + 15 random EARNED (seed
 20261107), shuffled, labels hidden, key apart. One line each: task, claim (first sentence of the report with a completion
-word), evidence (first cited absolute path, else file name, else commit; handoff files skipped when anything else is cited), Y/N = did the claimed result really hold.
+word), evidence (first cited file or commit in text order; handoff files skipped when anything else is cited), Y/N = did the claimed result really hold.
 Writes private/second_reader_sheet.md (old 20-row sheet kept as private/second_reader_sheet_p2.md) and private/second_reader_key_p5.json."""
 import sys,json,random,re,os,shutil
 sys.path.insert(0,'scripts'); from p2_lib import *; from p5_01_plants import COMPLETE,sents
@@ -13,7 +13,7 @@ c=lambda s,n:re.sub(r'\s+',' ',(s or '')).replace('|','/').strip()[:n]
 rows=[]
 for i in pick:
     h=R[i]['handoff'] or ''; cl=next((s for s in sents(visible(h)) if COMPLETE.search(s)),sents(h)[0] if h else '')
-    hs,abss,rel=extract(h); nh=lambda v:[x for x in v if not re.search(r'(?i)handoff',x)]; ev=(nh(abss) or nh(rel) or hs or abss or rel or ['(none cited)'])[0]
+    hs,abss,rel=extract(h); nh=lambda v:[x for x in v if not re.search(r'(?i)handoff',x)]; fo=lambda v:sorted(v,key=lambda x:(h.find(x) if x in h else 10**9)); ev=(fo(nh(abss)+nh(rel)+hs) or fo(abss+rel) or ['(none cited)'])[0]
     rows.append((i,c(R[i]['task'],170),c(cl,230),c(ev,120)))
 with open('private/second_reader_sheet.md','w') as w:
     w.write("# Second reader, 30 rows, about 10 minutes. PRIVATE: never published.\n"
