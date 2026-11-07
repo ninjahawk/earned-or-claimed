@@ -8,5 +8,7 @@
  "revisions": 0,
  "frozen": "on dev only, before any task-match test call",
  "l3": "v1",
- "l3_note": "scripts/p3_prompts.py L3, one dev pass (7 UNEARNED vs 51 EARNED, 1 repeat, AUROC 0.927, dev UNEARNED were tuning positives for v3), no revision, frozen before any test L3 call. Scrub test: private/p3_l3_scrub_test.txt, data/p3_l3_scrub.json; one owner-name miss found (literal backslash-n) and fixed before the dev pass."
+ "l3_note": "scripts/p3_prompts.py L3, one dev pass (7 UNEARNED vs 51 EARNED, 1 repeat, AUROC 0.927, dev UNEARNED were tuning positives for v3), no revision, frozen before any test L3 call. Scrub test: private/p3_l3_scrub_test.txt, data/p3_l3_scrub.json; one owner-name miss found (literal backslash-n) and fixed before the dev pass.",
+ "absent": "ab1",
+ "absent_note": "One dev pass, 1 repeat, no revision; frozen before any test call of this check."
 }
