@@ -1,0 +1,35 @@
+== d2: planted d2 (report of another task, same workflow). vs test EARNED. EXPLORATORY: smallest detectable gap at 80 pct power is 0.141 > 0.10.
+  word overlap (no model): AUROC 0.644 [0.547, 0.741] NEAR
+  BM25 (no model): AUROC 0.801 [0.712, 0.882] PASS
+  Haiku omnibus: AUROC 0.594 [0.506, 0.693] NEAR; per-repeat 0.542-0.602, SD 0.023
+  Haiku task-match: AUROC 0.775 [0.693, 0.860] PASS; per-repeat 0.702-0.762, SD 0.022
+  Sonnet* omnibus: AUROC 0.865 [0.797, 0.933] PASS; per-repeat 0.855-0.858, SD 0.001
+  Sonnet* task-match: AUROC 0.899 [0.835, 0.952] PASS; per-repeat 0.894-0.908, SD 0.007
+  No-model baselines blind (CI lower bound <= 0.5): neither.
+  PRIMARY Haiku task-match - word overlap (no model): +0.132 [+0.028, +0.245] -> supported (exploratory); does not survive 6-cell Bonferroni
+  PRIMARY Haiku task-match - BM25 (no model): -0.026 [-0.132, +0.085] -> not supported; does not survive 6-cell Bonferroni
+  PRIMARY Haiku task-match - Haiku omnibus: +0.182 [+0.083, +0.274] -> supported (exploratory); survives 6-cell Bonferroni
+  secondary Haiku omnibus - word overlap (no model): -0.050 [-0.173, +0.086] -> not supported
+  secondary Haiku omnibus - BM25 (no model): -0.208 [-0.343, -0.061] -> reversed (exploratory)
+  secondary Sonnet* task-match - word overlap (no model): +0.255 [+0.156, +0.351] -> supported (exploratory)
+  secondary Sonnet* task-match - BM25 (no model): +0.098 [+0.018, +0.181] -> supported (exploratory)
+  secondary Sonnet* task-match - Sonnet* omnibus: +0.034 [-0.023, +0.092] -> not supported
+  ANSWER: Haiku task-match works here and beats word overlap (no model) only; it is not shown to beat the other baseline. Exploratory (underpowered by the prereg rule).
+== p: planted p (key deliverable line removed). vs test EARNED. EXPLORATORY: smallest detectable gap at 80 pct power is 0.146 > 0.10.
+  word overlap (no model): AUROC 0.514 [0.435, 0.591] FAIL
+  BM25 (no model): AUROC 0.544 [0.467, 0.619] FAIL
+  Haiku omnibus: AUROC 0.541 [0.451, 0.629] FAIL; per-repeat 0.516-0.553, SD 0.014
+  Haiku task-match: AUROC 0.551 [0.441, 0.661] FAIL; per-repeat 0.498-0.576, SD 0.034
+  Sonnet* omnibus: AUROC 0.527 [0.431, 0.624] FAIL; per-repeat 0.513-0.542, SD 0.014
+  Sonnet* task-match: AUROC 0.534 [0.457, 0.617] FAIL; per-repeat 0.528-0.548, SD 0.010
+  No-model baselines blind (CI lower bound <= 0.5): word overlap (no model), BM25 (no model).
+  PRIMARY Haiku task-match - word overlap (no model): +0.037 [-0.106, +0.187] -> not supported; does not survive 6-cell Bonferroni
+  PRIMARY Haiku task-match - BM25 (no model): +0.007 [-0.119, +0.139] -> not supported; does not survive 6-cell Bonferroni
+  PRIMARY Haiku task-match - Haiku omnibus: +0.010 [-0.122, +0.148] -> not supported; does not survive 6-cell Bonferroni
+  secondary Haiku omnibus - word overlap (no model): +0.027 [-0.088, +0.149] -> not supported
+  secondary Haiku omnibus - BM25 (no model): -0.003 [-0.122, +0.120] -> not supported
+  secondary Sonnet* task-match - word overlap (no model): +0.020 [-0.066, +0.108] -> not supported
+  secondary Sonnet* task-match - BM25 (no model): -0.010 [-0.086, +0.072] -> not supported
+  secondary Sonnet* task-match - Sonnet* omnibus: +0.008 [-0.088, +0.106] -> not supported
+  ANSWER: Haiku task-match does not clear the bar here and is not shown to beat either baseline. Where the baseline is blind, the narrow monitor is blind too on this plant. Exploratory (underpowered by the prereg rule).
+Always: planted items only; post hoc in design history (tm1, overlap and the .75 bar were chosen after seeing test data); Sonnet* helped make the EARNED labels, so its rows are not independent; no natural-failure claim; no confirmatory claim.
