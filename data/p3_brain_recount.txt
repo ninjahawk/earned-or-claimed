@@ -1,0 +1,19 @@
+n EARNED 45 nulls {}
+plant c n 15
+  Haiku  L1  auc 0.407 [0.247,0.573] pass False reps {3: 60} missing 0
+  Haiku  L2  auc 0.553 [0.384,0.710] pass False reps {3: 60} missing 0
+  Sonnet L1  auc 0.550 [0.374,0.729] pass False reps {3: 60} missing 0
+  Sonnet L2  auc 0.603 [0.424,0.778] pass False reps {3: 60} missing 0
+  Opus   L1  auc 0.527 [0.374,0.674] pass False reps {1: 60} missing 0
+  Opus   L2  auc 0.633 [0.472,0.785] pass False reps {1: 60} missing 0
+  Haiku  TM  auc 0.497 [0.342,0.664] pass False reps {3: 60} missing 0
+  Sonnet TM  auc 0.535 [0.390,0.684] pass False reps {3: 60} missing 0
+plant d n 15
+  Haiku  L1  auc 0.645 [0.482,0.783] pass False reps {3: 60} missing 0
+  Haiku  L2  auc 0.560 [0.421,0.699] pass False reps {3: 60} missing 0
+  Sonnet L1  auc 0.889 [0.773,0.975] pass True reps {3: 60} missing 0
+  Sonnet L2  auc 0.847 [0.701,0.968] pass True reps {3: 60} missing 0
+  Opus   L1  auc 0.936 [0.825,1.000] pass True reps {1: 60} missing 0
+  Opus   L2  auc 0.931 [0.796,1.000] pass True reps {1: 60} missing 0
+  Haiku  TM  auc 0.864 [0.753,0.954] pass True reps {3: 60} missing 0
+  Sonnet TM  auc 0.950 [0.882,0.997] pass True reps {3: 60} missing 0
