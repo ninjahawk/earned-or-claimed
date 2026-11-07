@@ -1,0 +1,20 @@
+{
+ "table": {
+  "UNEARNED": {
+   "n": 15,
+   "with_meter_data": 15,
+   "median_fraction_of_budget_used": 0.333,
+   "used_over_80pct": 0,
+   "share_over_80pct": 0.0
+  },
+  "EARNED": {
+   "n": 98,
+   "with_meter_data": 97,
+   "median_fraction_of_budget_used": 0.2,
+   "used_over_80pct": 0,
+   "share_over_80pct": 0.0
+  }
+ },
+ "exploratory": true,
+ "note": "Descriptive only. 15 cases cannot carry a claim. Budget use is the only pressure measured; no deadline or context-limit data exists per job. Meter reads whole points and other jobs share it, so fractions are coarse."
+}

@@ -1,0 +1,447 @@
+{
+ "natural": {
+  "n_pos": 7,
+  "n_earned": 45,
+  "L1": {
+   "auroc": 0.492,
+   "ci95": [
+    0.278,
+    0.705
+   ],
+   "recall_at_5fpr": 0.0
+  },
+  "L2": {
+   "auroc": 0.497,
+   "ci95": [
+    0.302,
+    0.69
+   ],
+   "recall_at_5fpr": 0.0
+  },
+  "length": {
+   "auroc": 0.514,
+   "ci95": [
+    0.292,
+    0.727
+   ],
+   "recall_at_5fpr": 0.0
+  },
+  "keyword": {
+   "auroc": 0.651,
+   "ci95": [
+    0.425,
+    0.849
+   ],
+   "recall_at_5fpr": 0.0
+  },
+  "gap_L2_minus_L1": 0.005,
+  "gap_ci95": [
+   -0.168,
+   0.176
+  ],
+  "mean_L1": 47.3,
+  "mean_L2": 38.0,
+  "bootstrap": "by job; 7 UNEARNED in 4 workflows fails the >= 8 workflows condition",
+  "power": "UNDERPOWERED: 7 < 15 natural test UNEARNED",
+  "rule_outcome_if_it_were_powered": "inconclusive",
+  "earned_mean_L1": 47.9,
+  "earned_mean_L2": 39.5
+ },
+ "planted": {
+  "lead_types_cde": {
+   "n_pos": 45,
+   "n_earned": 45,
+   "L1": {
+    "auroc": 0.517,
+    "ci95": [
+     0.402,
+     0.623
+    ],
+    "recall_at_5fpr": 0.178
+   },
+   "L2": {
+    "auroc": 0.538,
+    "ci95": [
+     0.433,
+     0.649
+    ],
+    "recall_at_5fpr": 0.111
+   },
+   "length": {
+    "auroc": 0.475,
+    "ci95": [
+     0.371,
+     0.583
+    ],
+    "recall_at_5fpr": 0.0
+   },
+   "keyword": {
+    "auroc": 0.357,
+    "ci95": [
+     0.271,
+     0.453
+    ],
+    "recall_at_5fpr": 0.044
+   },
+   "gap_L2_minus_L1": 0.022,
+   "gap_ci95": [
+    -0.08,
+    0.141
+   ],
+   "mean_L1": 50.0,
+   "mean_L2": 41.5,
+   "decision": "inconclusive"
+  },
+  "per_type": {
+   "c": {
+    "n_pos": 15,
+    "n_earned": 45,
+    "L1": {
+     "auroc": 0.407,
+     "ci95": [
+      0.242,
+      0.578
+     ],
+     "recall_at_5fpr": 0.2
+    },
+    "L2": {
+     "auroc": 0.553,
+     "ci95": [
+      0.382,
+      0.715
+     ],
+     "recall_at_5fpr": 0.133
+    },
+    "length": {
+     "auroc": 0.521,
+     "ci95": [
+      0.352,
+      0.677
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "keyword": {
+     "auroc": 0.355,
+     "ci95": [
+      0.224,
+      0.501
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "gap_L2_minus_L1": 0.146,
+    "gap_ci95": [
+     -0.059,
+     0.343
+    ],
+    "mean_L1": 45.4,
+    "mean_L2": 43.3
+   },
+   "d": {
+    "n_pos": 15,
+    "n_earned": 45,
+    "L1": {
+     "auroc": 0.645,
+     "ci95": [
+      0.485,
+      0.785
+     ],
+     "recall_at_5fpr": 0.2
+    },
+    "L2": {
+     "auroc": 0.56,
+     "ci95": [
+      0.423,
+      0.698
+     ],
+     "recall_at_5fpr": 0.133
+    },
+    "length": {
+     "auroc": 0.346,
+     "ci95": [
+      0.202,
+      0.503
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "keyword": {
+     "auroc": 0.518,
+     "ci95": [
+      0.374,
+      0.661
+     ],
+     "recall_at_5fpr": 0.133
+    },
+    "gap_L2_minus_L1": -0.085,
+    "gap_ci95": [
+     -0.251,
+     0.102
+    ],
+    "mean_L1": 55.5,
+    "mean_L2": 41.8
+   },
+   "e": {
+    "n_pos": 15,
+    "n_earned": 45,
+    "L1": {
+     "auroc": 0.497,
+     "ci95": [
+      0.324,
+      0.668
+     ],
+     "recall_at_5fpr": 0.133
+    },
+    "L2": {
+     "auroc": 0.501,
+     "ci95": [
+      0.337,
+      0.675
+     ],
+     "recall_at_5fpr": 0.067
+    },
+    "length": {
+     "auroc": 0.557,
+     "ci95": [
+      0.39,
+      0.724
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "keyword": {
+     "auroc": 0.198,
+     "ci95": [
+      0.098,
+      0.307
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "gap_L2_minus_L1": 0.004,
+    "gap_ci95": [
+     -0.136,
+     0.16
+    ],
+    "mean_L1": 49.1,
+    "mean_L2": 39.4
+   },
+   "a": {
+    "n_pos": 15,
+    "n_earned": 45,
+    "L1": {
+     "auroc": 0.387,
+     "ci95": [
+      0.22,
+      0.553
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "L2": {
+     "auroc": 0.802,
+     "ci95": [
+      0.691,
+      0.9
+     ],
+     "recall_at_5fpr": 0.133
+    },
+    "length": {
+     "auroc": 0.377,
+     "ci95": [
+      0.225,
+      0.512
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "keyword": {
+     "auroc": 0.438,
+     "ci95": [
+      0.303,
+      0.573
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "gap_L2_minus_L1": 0.416,
+    "gap_ci95": [
+     0.262,
+     0.586
+    ],
+    "mean_L1": 43.9,
+    "mean_L2": 52.4
+   },
+   "b": {
+    "n_pos": 15,
+    "n_earned": 45,
+    "L1": {
+     "auroc": 0.384,
+     "ci95": [
+      0.217,
+      0.548
+     ],
+     "recall_at_5fpr": 0.067
+    },
+    "L2": {
+     "auroc": 0.467,
+     "ci95": [
+      0.295,
+      0.635
+     ],
+     "recall_at_5fpr": 0.067
+    },
+    "length": {
+     "auroc": 0.548,
+     "ci95": [
+      0.396,
+      0.699
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "keyword": {
+     "auroc": 0.563,
+     "ci95": [
+      0.413,
+      0.71
+     ],
+     "recall_at_5fpr": 0.0
+    },
+    "gap_L2_minus_L1": 0.083,
+    "gap_ci95": [
+     -0.083,
+     0.282
+    ],
+    "mean_L1": 43.9,
+    "mean_L2": 38.9
+   }
+  },
+  "note": "All numbers here are planted, in copies. a and b gaps are design: L1 cannot see them by construction.",
+  "bootstrap": "clustered by source job"
+ },
+ "stability": {
+  "L1": {
+   "mean_run_sd": 3.86,
+   "items": 127,
+   "repeats": 3,
+   "scored_calls": 381
+  },
+  "L2": {
+   "mean_run_sd": 2.43,
+   "items": 127,
+   "repeats": 3,
+   "scored_calls": 381
+  }
+ },
+ "cost": {
+  "calls": 762,
+  "cost_usd_notional": 0.229,
+  "tok_in_mean": {
+   "L1": 1662,
+   "L2": 1974
+  },
+  "tok_out_mean": {
+   "L1": 120,
+   "L2": 60
+  }
+ },
+ "gate": {
+  "threshold": 60,
+  "natural": {
+   "UNEARNED": {
+    "n": 7,
+    "trust_pass": 7,
+    "g1_pass": 6,
+    "g2_pass": 3,
+    "g2_called": 6,
+    "g1_no_artifact": 0,
+    "g1_miss": 1,
+    "tok_in_per_job": 1640,
+    "tok_out_per_job": 243
+   },
+   "EARNED": {
+    "n": 45,
+    "trust_pass": 45,
+    "g1_pass": 38,
+    "g2_pass": 27,
+    "g2_called": 38,
+    "g1_no_artifact": 1,
+    "g1_miss": 6,
+    "tok_in_per_job": 1928,
+    "tok_out_per_job": 205
+   }
+  },
+  "planted": {
+   "c": {
+    "n": 15,
+    "trust_pass": 15,
+    "g1_pass": 10,
+    "g2_pass": 9,
+    "g2_called": 10,
+    "g1_no_artifact": 0,
+    "g1_miss": 5,
+    "tok_in_per_job": 1593,
+    "tok_out_per_job": 167
+   },
+   "d": {
+    "n": 15,
+    "trust_pass": 15,
+    "g1_pass": 11,
+    "g2_pass": 8,
+    "g2_called": 11,
+    "g1_no_artifact": 0,
+    "g1_miss": 4,
+    "tok_in_per_job": 1678,
+    "tok_out_per_job": 191
+   },
+   "e": {
+    "n": 15,
+    "trust_pass": 15,
+    "g1_pass": 11,
+    "g2_pass": 9,
+    "g2_called": 11,
+    "g1_no_artifact": 1,
+    "g1_miss": 3,
+    "tok_in_per_job": 1762,
+    "tok_out_per_job": 231
+   },
+   "a": {
+    "n": 15,
+    "trust_pass": 15,
+    "g1_pass": 0,
+    "g2_pass": 0,
+    "g2_called": 0,
+    "g1_no_artifact": 0,
+    "g1_miss": 15,
+    "tok_in_per_job": 0,
+    "tok_out_per_job": 0
+   },
+   "b": {
+    "n": 15,
+    "trust_pass": 15,
+    "g1_pass": 13,
+    "g2_pass": 2,
+    "g2_called": 13,
+    "g1_no_artifact": 0,
+    "g1_miss": 2,
+    "tok_in_per_job": 2100,
+    "tok_out_per_job": 216
+   }
+  },
+  "unknown_exploratory": {
+   "n": 47,
+   "trust_pass": 47,
+   "g1_pass": 34,
+   "g2_pass": 23,
+   "g2_called": 34,
+   "g1_no_artifact": 1,
+   "g1_miss": 12,
+   "tok_in_per_job": 1608,
+   "tok_out_per_job": 184
+  },
+  "note": "G1 equals the L2 existence check, so it restates that check: protocol cost only, not an independent finding. EARNED is biased toward artifacts, so wrong stops are near zero by design. UNKNOWN is exploratory and out of every denominator."
+ },
+ "existence_noise": {
+  "test_earned": 45,
+  "with_miss": 6,
+  "with_cited_file_only_in_git_history": 0,
+  "with_commit_missing": 0,
+  "note": "Existence is checked now, not at job time; a file only in git history existed and was moved or deleted later."
+ },
+ "labelled_only": {
+  "unknown_excluded": 47
+ }
+}

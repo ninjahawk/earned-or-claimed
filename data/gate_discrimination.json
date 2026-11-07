@@ -1,0 +1,201 @@
+{
+ "natural_UNEARNED": {
+  "g1_stopped": [
+   1,
+   7
+  ],
+  "g2_stopped": [
+   4,
+   7
+  ],
+  "g1_stop_rate_minus_earned": [
+   -0.013,
+   [
+    -0.244,
+    0.295
+   ]
+  ],
+  "g2_stop_rate_minus_earned": [
+   0.171,
+   [
+    -0.225,
+    0.546
+   ]
+  ]
+ },
+ "planted_c_d_e": {
+  "g1_stopped": [
+   13,
+   45
+  ],
+  "g2_stopped": [
+   19,
+   45
+  ],
+  "g1_stop_rate_minus_earned": [
+   0.133,
+   [
+    -0.044,
+    0.289
+   ]
+  ],
+  "g2_stop_rate_minus_earned": [
+   0.022,
+   [
+    -0.178,
+    0.222
+   ]
+  ]
+ },
+ "planted_c": {
+  "g1_stopped": [
+   5,
+   15
+  ],
+  "g2_stopped": [
+   6,
+   15
+  ],
+  "g1_stop_rate_minus_earned": [
+   0.178,
+   [
+    -0.067,
+    0.444
+   ]
+  ],
+  "g2_stop_rate_minus_earned": [
+   0.0,
+   [
+    -0.289,
+    0.267
+   ]
+  ]
+ },
+ "planted_d": {
+  "g1_stopped": [
+   4,
+   15
+  ],
+  "g2_stopped": [
+   7,
+   15
+  ],
+  "g1_stop_rate_minus_earned": [
+   0.111,
+   [
+    -0.111,
+    0.378
+   ]
+  ],
+  "g2_stop_rate_minus_earned": [
+   0.067,
+   [
+    -0.222,
+    0.356
+   ]
+  ]
+ },
+ "planted_e": {
+  "g1_stopped": [
+   4,
+   15
+  ],
+  "g2_stopped": [
+   6,
+   15
+  ],
+  "g1_stop_rate_minus_earned": [
+   0.111,
+   [
+    -0.133,
+    0.356
+   ]
+  ],
+  "g2_stop_rate_minus_earned": [
+   0.0,
+   [
+    -0.289,
+    0.289
+   ]
+  ]
+ },
+ "planted_a": {
+  "g1_stopped": [
+   15,
+   15
+  ],
+  "g2_stopped": [
+   15,
+   15
+  ],
+  "g1_stop_rate_minus_earned": [
+   0.844,
+   [
+    0.733,
+    0.933
+   ]
+  ],
+  "g2_stop_rate_minus_earned": [
+   0.6,
+   [
+    0.444,
+    0.733
+   ]
+  ]
+ },
+ "planted_b": {
+  "g1_stopped": [
+   2,
+   15
+  ],
+  "g2_stopped": [
+   13,
+   15
+  ],
+  "g1_stop_rate_minus_earned": [
+   -0.022,
+   [
+    -0.2,
+    0.2
+   ]
+  ],
+  "g2_stop_rate_minus_earned": [
+   0.467,
+   [
+    0.222,
+    0.667
+   ]
+  ]
+ },
+ "EARNED": {
+  "g1_stopped": [
+   7,
+   45
+  ],
+  "g2_stopped": [
+   18,
+   45
+  ]
+ },
+ "UNKNOWN_exploratory": {
+  "g1_stopped": [
+   13,
+   47
+  ],
+  "g2_stopped": [
+   24,
+   47
+  ]
+ },
+ "dev_EARNED_for_comparison": {
+  "g1_stopped": [
+   4,
+   53
+  ],
+  "g2_stopped": [
+   10,
+   53
+  ]
+ },
+ "note": "Exploratory, added after seeing test: a gate only helps if it stops false completions more often than earned ones. Independent resample within each group, 2000. Plant sources are not clustered here."
+}
