@@ -59,6 +59,15 @@ L=collections.defaultdict(list)
 for r in ld('private/p3_l3_test.jsonl'): L[r['item']].append(r['score'])
 u=[i for i in L if A[i]=='UNEARNED']; e=[i for i in L if A[i]=='EARNED']; x=round(float(rs([np.mean(L[i]) for i in u],[np.mean(L[i]) for i in e])),3); n+=1
 if abs(x-D['L3']['L3']['auroc'])>.0011: bad.append(('L3',x))
+AB=json.load(open('data/p3_absent.json'))['results']
+for mod in(HK,SN):
+    X=collections.defaultdict(list)
+    for r in ld('private/p3_ab_test.jsonl'):
+        if r['model']==mod: X[r['item']].append(r['score'])
+    m={i:np.mean(v) for i,v in X.items()}; assert all(len(v)==3 for v in X.values()) and len(X)==127
+    for arm in('UNEARNED','plant_a','plant_b','plant_c','plant_d','plant_e'):
+        x=round(float(rs([m[i] for i in it(arm)],[m[i] for i in E])),3); n+=1
+        if abs(x-AB[mod][arm]['auroc'])>.0011: bad.append(('absent',mod,arm,x))
 # step 4 preconditions and step 1 from their files
 C=json.load(open('data/p3_corrections.json'))['g1']; n+=2
 if (C['test/EARNED']['g1_raw_pass'],C['test/EARNED']['g1_corrected_pass'])!=(38,39): bad.append('g1 earned')
