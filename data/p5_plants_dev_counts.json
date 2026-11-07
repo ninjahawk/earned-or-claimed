@@ -1,0 +1,20 @@
+{
+ "split": "dev",
+ "earned": 53,
+ "counts": {
+  "d2": 53,
+  "p": 46
+ },
+ "d2_distinct_report_sources": 36,
+ "d2_task_jaccard_median": 0.2,
+ "p_removed_sentences_median": 1,
+ "by_workflow": {
+  "d2/hoi": 33,
+  "d2/robot30": 7,
+  "d2/jspace": 13,
+  "p/hoi": 30,
+  "p/robot30": 5,
+  "p/jspace": 11
+ },
+ "model_written": 0
+}
