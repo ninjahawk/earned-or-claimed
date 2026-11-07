@@ -1,0 +1,72 @@
+{
+ "checks": 28,
+ "mismatch": [],
+ "max_ci_diff": 0.009,
+ "calls": {
+  "haiku_omni": 590,
+  "haiku_tm": 590,
+  "sonnet_omni*": 236,
+  "sonnet_tm*": 236
+ },
+ "d2/overlap": [
+  0.644,
+  0.544,
+  0.749
+ ],
+ "d2/bm25": [
+  0.801,
+  0.712,
+  0.881
+ ],
+ "d2/haiku_omni": [
+  0.594,
+  0.498,
+  0.691
+ ],
+ "d2/haiku_tm": [
+  0.775,
+  0.687,
+  0.865
+ ],
+ "d2/sonnet_omni*": [
+  0.865,
+  0.792,
+  0.931
+ ],
+ "d2/sonnet_tm*": [
+  0.899,
+  0.834,
+  0.952
+ ],
+ "p/overlap": [
+  0.514,
+  0.435,
+  0.588
+ ],
+ "p/bm25": [
+  0.544,
+  0.466,
+  0.616
+ ],
+ "p/haiku_omni": [
+  0.541,
+  0.45,
+  0.629
+ ],
+ "p/haiku_tm": [
+  0.551,
+  0.44,
+  0.67
+ ],
+ "p/sonnet_omni*": [
+  0.527,
+  0.427,
+  0.621
+ ],
+ "p/sonnet_tm*": [
+  0.534,
+  0.457,
+  0.615
+ ],
+ "full_note": "step 3 (data/p5_full.json) is not recounted here"
+}
