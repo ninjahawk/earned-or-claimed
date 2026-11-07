@@ -61,4 +61,4 @@ def transcript_excerpt(path,cap=12000):
             if not ln.strip() or DROP.search(ln): continue
             u=unleak(scrub(ln))
             if u: lines.append(u)
-    return '\n'.join(lines)[-cap:]
+    return re.sub(r'(?i)nathan|langley|USER','[OWNER]','\n'.join(lines))[-cap:]
