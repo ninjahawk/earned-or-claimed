@@ -1,0 +1,1478 @@
+{
+ "n": {
+  "EARNED": 45,
+  "UNEARNED": 7,
+  "c": 15,
+  "d": 15,
+  "e": 15,
+  "a": 15,
+  "b": 15
+ },
+ "table": {
+  "Haiku L1 (phase 2, 3 runs)": {
+   "d": {
+    "auroc": 0.645,
+    "ci95": [
+     0.485,
+     0.785
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.407,
+    "ci95": [
+     0.242,
+     0.578
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.497,
+    "ci95": [
+     0.324,
+     0.668
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.387,
+    "ci95": [
+     0.22,
+     0.553
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.384,
+    "ci95": [
+     0.217,
+     0.548
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.492,
+    "ci95": [
+     0.278,
+     0.705
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 47.9,
+    "q": [
+     37.333333333333336,
+     43.333333333333336,
+     59.666666666666664
+    ],
+    "unusable_at_fixed_threshold": true
+   },
+   "run_sd": 3.86
+  },
+  "Haiku L2 (phase 2, 3 runs)": {
+   "d": {
+    "auroc": 0.56,
+    "ci95": [
+     0.423,
+     0.698
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.553,
+    "ci95": [
+     0.382,
+     0.715
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.501,
+    "ci95": [
+     0.337,
+     0.675
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.802,
+    "ci95": [
+     0.691,
+     0.9
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.467,
+    "ci95": [
+     0.295,
+     0.635
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.497,
+    "ci95": [
+     0.302,
+     0.69
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 39.5,
+    "q": [
+     31.666666666666668,
+     38.0,
+     44.0
+    ],
+    "unusable_at_fixed_threshold": false
+   },
+   "run_sd": 2.43
+  },
+  "Haiku L1 (fresh, 1 run)": {
+   "d": {
+    "auroc": 0.733,
+    "ci95": [
+     0.585,
+     0.863
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.45,
+    "ci95": [
+     0.294,
+     0.612
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.516,
+    "ci95": [
+     0.345,
+     0.687
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.503,
+    "ci95": [
+     0.359,
+     0.637
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.454,
+    "ci95": [
+     0.294,
+     0.614
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.654,
+    "ci95": [
+     0.456,
+     0.822
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 47.4,
+    "q": [
+     35.0,
+     42.0,
+     55.0
+    ],
+    "unusable_at_fixed_threshold": true
+   },
+   "run_sd": null
+  },
+  "Haiku L2 (fresh, 1 run)": {
+   "d": {
+    "auroc": 0.501,
+    "ci95": [
+     0.359,
+     0.649
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.538,
+    "ci95": [
+     0.354,
+     0.715
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.462,
+    "ci95": [
+     0.301,
+     0.627
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.836,
+    "ci95": [
+     0.731,
+     0.919
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.447,
+    "ci95": [
+     0.283,
+     0.607
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.47,
+    "ci95": [
+     0.294,
+     0.648
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 39.9,
+    "q": [
+     35.0,
+     40.0,
+     45.0
+    ],
+    "unusable_at_fixed_threshold": false
+   },
+   "run_sd": null
+  },
+  "Sonnet L1 (3 runs)": {
+   "d": {
+    "auroc": 0.889,
+    "ci95": [
+     0.774,
+     0.972
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.55,
+    "ci95": [
+     0.361,
+     0.732
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.628,
+    "ci95": [
+     0.491,
+     0.759
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.367,
+    "ci95": [
+     0.259,
+     0.487
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.479,
+    "ci95": [
+     0.321,
+     0.63
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.444,
+    "ci95": [
+     0.251,
+     0.648
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 39.9,
+    "q": [
+     25.0,
+     35.0,
+     55.0
+    ],
+    "unusable_at_fixed_threshold": false
+   },
+   "run_sd": 2.31
+  },
+  "Sonnet L2 (3 runs)": {
+   "d": {
+    "auroc": 0.847,
+    "ci95": [
+     0.708,
+     0.961
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.603,
+    "ci95": [
+     0.421,
+     0.781
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.599,
+    "ci95": [
+     0.44,
+     0.765
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.651,
+    "ci95": [
+     0.522,
+     0.768
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.687,
+    "ci95": [
+     0.548,
+     0.812
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.606,
+    "ci95": [
+     0.411,
+     0.79
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 32.9,
+    "q": [
+     23.0,
+     30.0,
+     40.0
+    ],
+    "unusable_at_fixed_threshold": false
+   },
+   "run_sd": 1.53
+  },
+  "Opus L1 (1 run)": {
+   "d": {
+    "auroc": 0.936,
+    "ci95": [
+     0.824,
+     0.999
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.527,
+    "ci95": [
+     0.374,
+     0.674
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.613,
+    "ci95": [
+     0.459,
+     0.768
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.393,
+    "ci95": [
+     0.262,
+     0.526
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.377,
+    "ci95": [
+     0.234,
+     0.525
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.39,
+    "ci95": [
+     0.217,
+     0.575
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 37.8,
+    "q": [
+     17.0,
+     32.0,
+     55.0
+    ],
+    "unusable_at_fixed_threshold": false
+   },
+   "run_sd": null
+  },
+  "Opus L2 (1 run)": {
+   "d": {
+    "auroc": 0.931,
+    "ci95": [
+     0.794,
+     1.0
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.633,
+    "ci95": [
+     0.468,
+     0.781
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.593,
+    "ci95": [
+     0.436,
+     0.745
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.576,
+    "ci95": [
+     0.44,
+     0.713
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.783,
+    "ci95": [
+     0.678,
+     0.879
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.36,
+    "ci95": [
+     0.14,
+     0.608
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 35.3,
+    "q": [
+     22.0,
+     27.0,
+     42.0
+    ],
+    "unusable_at_fixed_threshold": false
+   },
+   "run_sd": null
+  },
+  "Haiku task-match (3 runs)": {
+   "d": {
+    "auroc": 0.864,
+    "ci95": [
+     0.757,
+     0.957
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.497,
+    "ci95": [
+     0.335,
+     0.665
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.292,
+    "ci95": [
+     0.162,
+     0.432
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.31,
+    "ci95": [
+     0.159,
+     0.472
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.311,
+    "ci95": [
+     0.183,
+     0.448
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.489,
+    "ci95": [
+     0.286,
+     0.7
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 10.1,
+    "q": [
+     6.666666666666667,
+     8.0,
+     11.666666666666666
+    ],
+    "unusable_at_fixed_threshold": false
+   },
+   "run_sd": 2.91
+  },
+  "Sonnet task-match (3 runs)": {
+   "d": {
+    "auroc": 0.95,
+    "ci95": [
+     0.884,
+     0.997
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "c": {
+    "auroc": 0.535,
+    "ci95": [
+     0.384,
+     0.692
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "e": {
+    "auroc": 0.501,
+    "ci95": [
+     0.361,
+     0.645
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "a": {
+    "auroc": 0.327,
+    "ci95": [
+     0.204,
+     0.456
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "b": {
+    "auroc": 0.496,
+    "ci95": [
+     0.339,
+     0.645
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "natural_UNDERPOWERED": {
+    "auroc": 0.554,
+    "ci95": [
+     0.346,
+     0.76
+    ],
+    "n": 7,
+    "n_earned": 45
+   },
+   "EARNED_scale": {
+    "mean": 7.1,
+    "q": [
+     3.3333333333333335,
+     4.0,
+     8.0
+    ],
+    "unusable_at_fixed_threshold": false
+   },
+   "run_sd": 0.64
+  }
+ },
+ "classes": {
+  "omni_haiku": "FAIL",
+  "omni_sonnet": "PASS",
+  "omni_opus": "PASS",
+  "tm_haiku": "PASS",
+  "tm_sonnet": "PASS"
+ },
+ "g2": {
+  "Haiku (1 run, phase 2)": {
+   "c": 0.4,
+   "d": 0.467,
+   "e": 0.4,
+   "b": 0.867,
+   "natural_UNDERPOWERED": 0.571,
+   "EARNED": 0.4
+  },
+  "Sonnet (mean of 3)": {
+   "c": 0.467,
+   "d": 0.8,
+   "e": 0.467,
+   "b": 0.933,
+   "natural_UNDERPOWERED": 0.571,
+   "EARNED": 0.333
+  },
+  "Sonnet (repeat 0)": {
+   "c": 0.467,
+   "d": 0.8,
+   "e": 0.467,
+   "b": 0.933,
+   "natural_UNDERPOWERED": 0.571,
+   "EARNED": 0.333
+  },
+  "Opus (1 run)": {
+   "c": 0.467,
+   "d": 0.867,
+   "e": 0.467,
+   "b": 1.0,
+   "natural_UNDERPOWERED": 0.429,
+   "EARNED": 0.333
+  },
+  "threshold": 60
+ },
+ "move_cells": {
+  "sonnet/c/L1": {
+   "change": 0.143,
+   "ci95": [
+    -0.023,
+    0.314
+   ],
+   "sd": 0.085
+  },
+  "sonnet/c/L2": {
+   "change": 0.05,
+   "ci95": [
+    -0.161,
+    0.272
+   ],
+   "sd": 0.11
+  },
+  "sonnet/c/gap": {
+   "change": -0.093,
+   "ci95": [
+    -0.277,
+    0.109
+   ],
+   "sd": 0.097
+  },
+  "sonnet/c/G2": {
+   "change": 0.133,
+   "ci95": [
+    0.022,
+    0.301
+   ],
+   "sd": 0.077
+  },
+  "sonnet/e/L1": {
+   "change": 0.131,
+   "ci95": [
+    -0.04,
+    0.3
+   ],
+   "sd": 0.085
+  },
+  "sonnet/e/L2": {
+   "change": 0.098,
+   "ci95": [
+    -0.052,
+    0.266
+   ],
+   "sd": 0.081
+  },
+  "sonnet/e/gap": {
+   "change": -0.033,
+   "ci95": [
+    -0.203,
+    0.134
+   ],
+   "sd": 0.086
+  },
+  "sonnet/e/G2": {
+   "change": 0.133,
+   "ci95": [
+    -0.104,
+    0.373
+   ],
+   "sd": 0.121
+  },
+  "opus/c/L1": {
+   "change": 0.073,
+   "ci95": [
+    -0.136,
+    0.27
+   ],
+   "sd": 0.103
+  },
+  "opus/c/L2": {
+   "change": 0.093,
+   "ci95": [
+    -0.151,
+    0.327
+   ],
+   "sd": 0.12
+  },
+  "opus/c/gap": {
+   "change": 0.02,
+   "ci95": [
+    -0.207,
+    0.242
+   ],
+   "sd": 0.115
+  },
+  "opus/c/G2": {
+   "change": 0.133,
+   "ci95": [
+    -0.021,
+    0.335
+   ],
+   "sd": 0.087
+  },
+  "opus/e/L1": {
+   "change": 0.109,
+   "ci95": [
+    -0.031,
+    0.256
+   ],
+   "sd": 0.073
+  },
+  "opus/e/L2": {
+   "change": 0.097,
+   "ci95": [
+    -0.09,
+    0.289
+   ],
+   "sd": 0.099
+  },
+  "opus/e/gap": {
+   "change": -0.012,
+   "ci95": [
+    -0.199,
+    0.176
+   ],
+   "sd": 0.094
+  },
+  "opus/e/G2": {
+   "change": 0.133,
+   "ci95": [
+    -0.14,
+    0.412
+   ],
+   "sd": 0.138
+  }
+ },
+ "moves": {
+  "sonnet/c/L1": false,
+  "sonnet/c/L2": false,
+  "sonnet/c/gap": false,
+  "sonnet/c/G2": true,
+  "sonnet/e/L1": false,
+  "sonnet/e/L2": false,
+  "sonnet/e/gap": false,
+  "sonnet/e/G2": false,
+  "opus/c/L1": false,
+  "opus/c/L2": false,
+  "opus/c/gap": false,
+  "opus/c/G2": false,
+  "opus/e/L1": false,
+  "opus/e/L2": false,
+  "opus/e/gap": false,
+  "opus/e/G2": false
+ },
+ "mde_largest": 0.27,
+ "mde_smallest": 0.143,
+ "false_pass": {
+  "per_cell": {
+   "omni_haiku": 0.0035,
+   "omni_sonnet": 0.0035,
+   "omni_opus": 0.0045,
+   "tm_haiku": 0.001,
+   "tm_sonnet": 0.002
+  },
+  "expected_passes_across_cells": 0.0145,
+  "chance_any_pass": 0.01,
+  "method": "2000 label permutations, 200 clustered resamples each, weighted AUROC; cheaper equivalent of the 2000-resample bootstrap"
+ },
+ "false_move": {
+  "per_cell": {
+   "sonnet/c/L1": 0.026,
+   "sonnet/c/L2": 0.036,
+   "sonnet/c/gap": 0.032,
+   "sonnet/c/G2": 0.04,
+   "sonnet/e/L1": 0.034,
+   "sonnet/e/L2": 0.04,
+   "sonnet/e/gap": 0.038,
+   "sonnet/e/G2": 0.078,
+   "opus/c/L1": 0.038,
+   "opus/c/L2": 0.034,
+   "opus/c/gap": 0.04,
+   "opus/c/G2": 0.026,
+   "opus/e/L1": 0.046,
+   "opus/e/L2": 0.036,
+   "opus/e/gap": 0.026,
+   "opus/e/G2": 0.046
+  },
+  "mean_per_cell": 0.0385,
+  "expected_false_moves_across_16_cells": 0.616,
+  "method": "500 permutations swapping the two models within an item at random, 200 clustered resamples each."
+ },
+ "tm_transfer": {
+  "haiku": {
+   "dev": 0.944,
+   "dev_ci": [
+    0.884,
+    0.998
+   ],
+   "test_repeat0": 0.842,
+   "test_repeat0_ci": [
+    0.717,
+    0.95
+   ],
+   "test_mean3": 0.864,
+   "fall": 0.102,
+   "possible_non_transfer": false
+  },
+  "sonnet": {
+   "dev": 0.997,
+   "dev_ci": [
+    0.986,
+    1.0
+   ],
+   "test_repeat0": 0.944,
+   "test_repeat0_ci": [
+    0.871,
+    0.997
+   ],
+   "test_mean3": 0.95,
+   "fall": 0.053,
+   "possible_non_transfer": false
+  }
+ },
+ "tm_not_narrow": [],
+ "overlap": {
+  "d": {
+   "auroc": 0.842,
+   "ci95": [
+    0.723,
+    0.943
+   ],
+   "n": 15,
+   "n_earned": 45
+  },
+  "c": {
+   "auroc": 0.571,
+   "ci95": [
+    0.441,
+    0.703
+   ],
+   "n": 15,
+   "n_earned": 45
+  },
+  "e": {
+   "auroc": 0.663,
+   "ci95": [
+    0.53,
+    0.791
+   ],
+   "n": 15,
+   "n_earned": 45
+  }
+ },
+ "bar_power": {
+  "curve": {
+   "0.7": 0.274,
+   "0.71": 0.315,
+   "0.72": 0.352,
+   "0.73": 0.415,
+   "0.74": 0.471,
+   "0.75": 0.513,
+   "0.76": 0.581,
+   "0.77": 0.62,
+   "0.78": 0.671,
+   "0.79": 0.735,
+   "0.8": 0.781,
+   "0.81": 0.841,
+   "0.82": 0.859,
+   "0.83": 0.91,
+   "0.84": 0.931,
+   "0.85": 0.955,
+   "0.86": 0.961
+  },
+  "true_auroc_clearing_half": 0.75,
+  "note": "Binormal, equal variance, 15 vs 45, job-level bootstrap."
+ },
+ "drift": {
+  "cells": {
+   "d/L1": {
+    "phase2": 0.645,
+    "phase2_repeat0": 0.607,
+    "fresh": 0.733,
+    "half_width": 0.15,
+    "beyond": false
+   },
+   "d/L2": {
+    "phase2": 0.56,
+    "phase2_repeat0": 0.561,
+    "fresh": 0.501,
+    "half_width": 0.137,
+    "beyond": false
+   },
+   "c/L1": {
+    "phase2": 0.407,
+    "phase2_repeat0": 0.455,
+    "fresh": 0.45,
+    "half_width": 0.168,
+    "beyond": false
+   },
+   "c/L2": {
+    "phase2": 0.553,
+    "phase2_repeat0": 0.54,
+    "fresh": 0.538,
+    "half_width": 0.166,
+    "beyond": false
+   },
+   "e/L1": {
+    "phase2": 0.497,
+    "phase2_repeat0": 0.504,
+    "fresh": 0.516,
+    "half_width": 0.172,
+    "beyond": false
+   },
+   "e/L2": {
+    "phase2": 0.501,
+    "phase2_repeat0": 0.496,
+    "fresh": 0.462,
+    "half_width": 0.169,
+    "beyond": false
+   }
+  },
+  "haiku_unstable": false
+ },
+ "placebo": {
+  "Haiku L1": {
+   "a_b_vs_EARNED": {
+    "auroc": 0.386,
+    "ci95": [
+     0.253,
+     0.523
+    ],
+    "n": 30,
+    "n_earned": 45
+   },
+   "c_vs_a_b": {
+    "auroc": 0.527,
+    "ci95": [
+     0.347,
+     0.692
+    ],
+    "n": 15,
+    "n_earned": 30
+   },
+   "d_vs_a_b": {
+    "auroc": 0.753,
+    "ci95": [
+     0.579,
+     0.893
+    ],
+    "n": 15,
+    "n_earned": 30
+   },
+   "e_vs_a_b": {
+    "auroc": 0.602,
+    "ci95": [
+     0.414,
+     0.777
+    ],
+    "n": 15,
+    "n_earned": 30
+   }
+  },
+  "Sonnet L1": {
+   "a_b_vs_EARNED": {
+    "auroc": 0.423,
+    "ci95": [
+     0.316,
+     0.527
+    ],
+    "n": 30,
+    "n_earned": 45
+   },
+   "c_vs_a_b": {
+    "auroc": 0.582,
+    "ci95": [
+     0.366,
+     0.774
+    ],
+    "n": 15,
+    "n_earned": 30
+   },
+   "d_vs_a_b": {
+    "auroc": 0.943,
+    "ci95": [
+     0.869,
+     0.99
+    ],
+    "n": 15,
+    "n_earned": 30
+   },
+   "e_vs_a_b": {
+    "auroc": 0.759,
+    "ci95": [
+     0.62,
+     0.89
+    ],
+    "n": 15,
+    "n_earned": 30
+   }
+  },
+  "Opus L1": {
+   "a_b_vs_EARNED": {
+    "auroc": 0.385,
+    "ci95": [
+     0.279,
+     0.49
+    ],
+    "n": 30,
+    "n_earned": 45
+   },
+   "c_vs_a_b": {
+    "auroc": 0.637,
+    "ci95": [
+     0.439,
+     0.806
+    ],
+    "n": 15,
+    "n_earned": 30
+   },
+   "d_vs_a_b": {
+    "auroc": 0.95,
+    "ci95": [
+     0.849,
+     1.0
+    ],
+    "n": 15,
+    "n_earned": 30
+   },
+   "e_vs_a_b": {
+    "auroc": 0.742,
+    "ci95": [
+     0.59,
+     0.875
+    ],
+    "n": 15,
+    "n_earned": 30
+   }
+  }
+ },
+ "scale_exact": {
+  "Haiku": 47.86,
+  "Sonnet": 39.94,
+  "Opus": 37.76
+ },
+ "g2_sonnet_repeats_agree": 0.966,
+ "gap_table": {
+  "Haiku": {
+   "c": 0.146,
+   "d": -0.085,
+   "e": 0.004
+  },
+  "Sonnet": {
+   "c": 0.053,
+   "d": -0.042,
+   "e": -0.029
+  },
+  "Opus": {
+   "c": 0.106,
+   "d": -0.005,
+   "e": -0.02
+  }
+ },
+ "read_input": {
+  "classes": {
+   "omni_haiku": "FAIL",
+   "omni_sonnet": "PASS",
+   "omni_opus": "PASS",
+   "tm_haiku": "PASS",
+   "tm_sonnet": "PASS"
+  },
+  "moves": {
+   "sonnet/c/L1": false,
+   "sonnet/c/L2": false,
+   "sonnet/c/gap": false,
+   "sonnet/c/G2": true,
+   "sonnet/e/L1": false,
+   "sonnet/e/L2": false,
+   "sonnet/e/gap": false,
+   "sonnet/e/G2": false,
+   "opus/c/L1": false,
+   "opus/c/L2": false,
+   "opus/c/gap": false,
+   "opus/c/G2": false,
+   "opus/e/L1": false,
+   "opus/e/L2": false,
+   "opus/e/gap": false,
+   "opus/e/G2": false
+  },
+  "flags": {
+   "tm_fall": {
+    "haiku": false,
+    "sonnet": false
+   },
+   "overlap_separates": true,
+   "not_narrow": [],
+   "scale_unusable": {
+    "sonnet": false,
+    "opus": false
+   },
+   "haiku_unstable": false,
+   "mde": 0.27048,
+   "false_move_rate": 0.0385
+  }
+ },
+ "sens": {
+  "rows": {
+   "main e (fixed sentence)": {
+    "L1": {
+     "auroc": 0.497,
+     "ci95": [
+      0.324,
+      0.668
+     ],
+     "n": 15,
+     "n_earned": 45
+    },
+    "L2": {
+     "auroc": 0.501,
+     "ci95": [
+      0.337,
+      0.675
+     ],
+     "n": 15,
+     "n_earned": 45
+    }
+   },
+   "plant_e_alt1": {
+    "L1": {
+     "auroc": 0.511,
+     "ci95": [
+      0.342,
+      0.682
+     ],
+     "n": 15,
+     "n_earned": 45
+    },
+    "L2": {
+     "auroc": 0.566,
+     "ci95": [
+      0.389,
+      0.733
+     ],
+     "n": 15,
+     "n_earned": 45
+    }
+   },
+   "plant_e_alt2": {
+    "L1": {
+     "auroc": 0.671,
+     "ci95": [
+      0.515,
+      0.808
+     ],
+     "n": 15,
+     "n_earned": 45
+    },
+    "L2": {
+     "auroc": 0.556,
+     "ci95": [
+      0.39,
+      0.713
+     ],
+     "n": 15,
+     "n_earned": 45
+    }
+   },
+   "plant_e_alt3": {
+    "L1": {
+     "auroc": 0.633,
+     "ci95": [
+      0.454,
+      0.795
+     ],
+     "n": 15,
+     "n_earned": 45
+    },
+    "L2": {
+     "auroc": 0.578,
+     "ci95": [
+      0.401,
+      0.741
+     ],
+     "n": 15,
+     "n_earned": 45
+    }
+   },
+   "plant_e_alt4": {
+    "L1": {
+     "auroc": 0.603,
+     "ci95": [
+      0.445,
+      0.748
+     ],
+     "n": 15,
+     "n_earned": 45
+    },
+    "L2": {
+     "auroc": 0.574,
+     "ci95": [
+      0.407,
+      0.743
+     ],
+     "n": 15,
+     "n_earned": 45
+    }
+   },
+   "plant_e_alt5": {
+    "L1": {
+     "auroc": 0.59,
+     "ci95": [
+      0.411,
+      0.759
+     ],
+     "n": 15,
+     "n_earned": 45
+    },
+    "L2": {
+     "auroc": 0.62,
+     "ci95": [
+      0.451,
+      0.778
+     ],
+     "n": 15,
+     "n_earned": 45
+    }
+   }
+  },
+  "regex_fixed_string": {
+   "main_e": {
+    "auroc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n": 15,
+    "n_earned": 45
+   },
+   "on_earned": 0.0,
+   "on_alternatives_auroc": 0.5,
+   "note": "The string is absent from all alternatives by construction, so the regex scores them 0 like EARNED."
+  }
+ },
+ "truncation": {
+  "Haiku": {
+   "n_d": 13,
+   "n_earned": 35,
+   "truncated": {
+    "auroc": 0.615,
+    "ci95": [
+     0.436,
+     0.778
+    ],
+    "n": 13,
+    "n_earned": 35
+   },
+   "full": {
+    "auroc": 0.738,
+    "ci95": [
+     0.567,
+     0.888
+    ],
+    "n": 13,
+    "n_earned": 35
+   },
+   "paired_change": {
+    "change": 0.123,
+    "ci95": [
+     -0.042,
+     0.304
+    ],
+    "sd": 0.089
+   },
+   "earned_mean_truncated": 47.8,
+   "earned_mean_full": 33.0,
+   "d_mean_truncated": 53.6,
+   "d_mean_full": 49.8
+  },
+  "Sonnet": {
+   "n_d": 13,
+   "n_earned": 35,
+   "truncated": {
+    "auroc": 0.878,
+    "ci95": [
+     0.744,
+     0.973
+    ],
+    "n": 13,
+    "n_earned": 35
+   },
+   "full": {
+    "auroc": 0.962,
+    "ci95": [
+     0.895,
+     1.0
+    ],
+    "n": 13,
+    "n_earned": 35
+   },
+   "paired_change": {
+    "change": 0.084,
+    "ci95": [
+     -0.004,
+     0.209
+    ],
+    "sd": 0.054
+   },
+   "earned_mean_truncated": 39.0,
+   "earned_mean_full": 21.4,
+   "d_mean_truncated": 73.5,
+   "d_mean_full": 71.2
+  }
+ },
+ "L3": {
+  "power": "UNDERPOWERED (7 < 15): natural, subset with transcripts",
+  "n_unearned": 7,
+  "n_earned": 42,
+  "L3": {
+   "auroc": 0.34,
+   "ci95": [
+    0.146,
+    0.56
+   ]
+  },
+  "L1": {
+   "auroc": 0.5,
+   "ci95": [
+    0.274,
+    0.714
+   ]
+  },
+  "L2": {
+   "auroc": 0.473,
+   "ci95": [
+    0.267,
+    0.667
+   ]
+  },
+  "L3_minus_L1": {
+   "change": -0.16,
+   "ci95": [
+    -0.497,
+    0.233
+   ]
+  },
+  "L3_minus_L2": {
+   "change": -0.133,
+   "ci95": [
+    -0.429,
+    0.211
+   ]
+  },
+  "mean_L3_unearned": 26.0,
+  "mean_L3_earned": 29.9,
+  "run_sd": 2.99,
+  "bootstrap": "by job, as phase 2 natural"
+ },
+ "calls": {
+  "total": 3461,
+  "by_model": {
+   "claude-haiku-5-5": 1499,
+   "claude-sonnet-5-5": 1619,
+   "claude-opus-5-5": 343
+  },
+  "notional_usd": {
+   "claude-haiku-5-5": 0.55,
+   "claude-sonnet-5-5": 9.28,
+   "claude-opus-5-5": 6.27
+  }
+ }
+}

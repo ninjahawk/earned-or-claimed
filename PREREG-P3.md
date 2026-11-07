@@ -47,3 +47,10 @@ Only if 1-4 are done with budget left. "Which item the task asks for is absent f
 Concurrency 5, retry transient failures, each call written to private/ as it returns. Meter guard: no new calls at weekly >= 40, this job's 35 at start + worst 5 (header line 44 is above that). Recount from raw with another formula and a bootstrap recount: scripts/p3_09_recount.py.
 
 ## Deviations
+All below are logged after the runs named; none changes a score, an arm or a rule, and p3_read.py is unchanged.
+- DP3-1 Added after seeing step 3, exploratory, in no reading: plants a and b are invisible to L1 by construction, so their L1 rows act as a placebo for plant pool vs EARNED (data/p3_results.json "placebo").
+- DP3-2 "Not narrow" was fixed above as upward only. The brief says "near 0.5". Haiku task-match on e is 0.292 with its CI below 0.5: the rule doesn't fire, and RESULTS-P3 states it plainly as not near 0.5.
+- DP3-3 Task-match dev ran 1 repeat, not 3, so dev to test compares repeat 0 with repeat 0; the 3-run test mean is printed too.
+- DP3-4 Natural rows in the one table use phase 2's bootstrap (classes resampled apart by job, DP4), so they reproduce its CIs exactly. Sonnet and Opus use the same.
+- DP3-5 L3 excerpt: the scrub test found one owner-name miss (a literal backslash-n before the name). Fixed before the dev pass; no monitor saw it.
+- DP3-6 G2's MOVE cell tests only the stronger model's scale, as written above. Haiku's own EARNED mean L1 (47.86) also fails the 40 limit, so the baseline rate is descriptive too. The rule isn't changed; RESULTS-P3 states it beside the MOVE.
