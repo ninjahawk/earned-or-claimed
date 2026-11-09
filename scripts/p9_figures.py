@@ -19,7 +19,7 @@ b.bar(range(3),v2,width=.6,color=[C2,G,G]); b.set_xticks(range(3)); b.set_xtickl
 for i,v in enumerate(v2): b.text(i,v+.3,str(v),ha='center')
 b.set_ylim(0,16.5); b.set_ylabel('UNEARNED claims'); b.set_title('(b) Existence check on the %d UNEARNED'%U,fontsize=9)
 b.spines[['top','right']].set_visible(False)
-f.tight_layout(); f.savefig('report/v4/fig/fig1.pdf'); f.savefig('report/v4/fig/fig1.png',dpi=200); plt.close(f)
+f.tight_layout(); f.savefig('report/latex/fig/fig1.pdf'); f.savefig('media/fig1.png',dpi=200); plt.close(f)
 T=json.load(open('data/test_results.json')); P=T['planted']['per_type']; nat=T['natural']
 names={'a':'(a) renamed\nfile','b':'(b) out-of-run\ncommit','c':'(c) fabricated\ntest log','d':"(d) other job's\nreport",'e':'(e) disclosure\nremoved'}
 groups=[(names[k],P[k]) for k in 'abcde']+[('natural\n(n = %d)'%nat['n_pos'],nat)]
@@ -30,7 +30,7 @@ for i,(lab,r) in enumerate(groups):
         ax.errorbar(x,s,yerr=[[s-lo],[hi-s]],fmt=m,color=c,ms=4,capsize=2,lw=.9,label=ll if i==0 else None)
 ax.axhline(.5,ls='--',c='k',lw=.6); ax.set_xticks(range(len(groups))); ax.set_xticklabels([g[0] for g in groups],fontsize=8)
 ax.set_ylim(.15,1.0); ax.set_ylabel('AUROC'); ax.spines[['top','right']].set_visible(False); ax.legend(loc='upper right',fontsize=8)
-f.tight_layout(); f.savefig('report/v4/fig/fig2.pdf'); f.savefig('report/v4/fig/fig2.png',dpi=200); plt.close(f)
+f.tight_layout(); f.savefig('report/latex/fig/fig2.pdf'); f.savefig('media/fig2.png',dpi=200); plt.close(f)
 P4=json.load(open('data/p4_paired.json'))['auroc']; B=json.load(open('data/p5_bm25_d.json')); T5=json.load(open('data/p5_results.json'))['types']
 d={'Word overlap':P4['Word overlap (no model)'],'BM25':B['bm25'],'Haiku omnibus':P4['Haiku omnibus'],'Haiku task-match':P4['Haiku task-match'],'Sonnet* omnibus':P4['Sonnet omnibus'],'Sonnet* task-match':P4['Sonnet task-match']}
 k5={'Word overlap':'overlap','BM25':'bm25','Haiku omnibus':'haiku_omni','Haiku task-match':'haiku_tm','Sonnet* omnibus':'sonnet_omni*','Sonnet* task-match':'sonnet_tm*'}
@@ -43,5 +43,5 @@ for gi,(lab,vals) in enumerate(panels):
         ax.errorbar(x,s,yerr=[[s-lo],[hi-s]],fmt=m,color=c,mfc=c if 'Sonnet' not in k else 'white',capsize=1.8,ms=3.8,lw=.8,label=k if gi==0 else None)
 ax.axhline(.5,ls='--',c='k',lw=.6); ax.set_xticks(range(3)); ax.set_xticklabels([p[0] for p in panels],fontsize=8); ax.set_ylim(.35,1.02)
 ax.set_ylabel('AUROC'); ax.spines[['top','right']].set_visible(False); ax.legend(fontsize=7.5,ncol=3,loc='lower left')
-f.tight_layout(); f.savefig('report/v4/fig/fig3.pdf'); f.savefig('report/v4/fig/fig3.png',dpi=200)
+f.tight_layout(); f.savefig('report/latex/fig/fig3.pdf'); f.savefig('media/fig3.png',dpi=200)
 print('ok',E,U,K,caught,present,nochk)
