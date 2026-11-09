@@ -75,3 +75,6 @@ trunc omni nocap-2000	+0.065 [-0.095, 0.224]
 trunc TM nocap-2000	+0.034 [-0.149, 0.183]
 trunc nocap TM-omni	+0.247 [0.016, 0.481]
 trunc uncapped len max/median (subset sources, scrubbed)	4054 / 2556 n 42
+trunc omni P3[:12000] same inputs	0.738 [0.556, 0.884] (npos 13, nneg 35)
+trunc omni P5nocap - P3[:12000] (identical text)	-0.058 [-0.169, 0.068]
+trunc TM2000 - omni2000	+0.278 [0.145, 0.436]

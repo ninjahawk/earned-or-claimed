@@ -165,3 +165,8 @@ FR = {str(json.loads(l).get('id', json.loads(l).get('item'))): json.loads(l) for
 srcs = {int(k) for k in sub if k.isdigit()} | {r['source'] for r in F5 if r['arm'] == 'plant_d'}
 lens = [len(to_report(FR[str(i)]['full'])) for i in srcs if str(i) in FR]
 if lens: say('trunc uncapped len max/median (subset sources, scrubbed)', f'{max(lens)} / {sorted(lens)[len(lens)//2]} n {len(lens)}')
+# run-to-run check: the same uncapped omnibus input, phase-3 [:12000] run vs phase-5 no-cap run
+F3 = J('p3_full.jsonl'); o3 = scores(F3, level='L1full', model='haiku')
+cell('trunc omni P3[:12000] same inputs', *split(o3, 'plant_d', sub))
+paired('trunc omni P5nocap - P3[:12000] (identical text)', *split(ofull, 'plant_d', sub), *split(o3, 'plant_d', sub))
+paired('trunc TM2000 - omni2000', *split(t2000, 'plant_d', sub), *split(o2000, 'plant_d', sub))
