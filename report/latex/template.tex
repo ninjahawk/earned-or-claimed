@@ -1,0 +1,32 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{fontspec}\setmainfont{Times New Roman}\setmonofont{Consolas}[Scale=0.9]
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,booktabs,longtable,array,calc,amsmath,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[hidelinks,pdfauthor={Nathan Langley},pdftitle={Earned or Claimed? Auditing 219 Done Reports From a Deployed Agent Swarm}]{hyperref}
+\usepackage{xurl}\urlstyle{same}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.8em}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{9pt}{4pt}
+\setlength{\parskip}{4pt}\setlength{\parindent}{0pt}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcounter{none}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{etoolbox}\AtBeginEnvironment{longtable}{\small}
+\makeatletter\renewcommand{\fps@figure}{htbp}\makeatother
+\begin{document}
+\begin{center}
+{\LARGE\bfseries $title$\par}\vspace{10pt}
+{\large Nathan Langley\par}\vspace{2pt}
+{University of North Carolina at Greensboro\par}\vspace{2pt}
+{\itshape Submitted to the Swarm Alignment Hackathon, an Apart Research Sprint (November 2026)\par}
+\end{center}
+\vspace{4pt}
+\begin{center}{\bfseries Abstract}\end{center}
+\begin{quote}\small
+$abstract$
+\end{quote}
+$body$
+\end{document}
