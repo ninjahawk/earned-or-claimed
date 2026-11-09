@@ -2,6 +2,7 @@
 """Render report/REPORT.md -> report/REPORT-final.html -> report/REPORT-final.pdf (python-markdown + weasyprint). Usage: /tmp/rv/bin/python scripts/p6_render.py  (weasyprint via the named venv)."""
 import markdown,subprocess,re,os,sys
 os.chdir('report'); src=open(sys.argv[1] if len(sys.argv)>1 else 'REPORT.md',newline='').read().replace('\r\n','\n').replace('\\\n','  \n')  # CommonMark backslash line breaks -> python-markdown hard breaks
+src=re.sub(r'!\[([^\]]*)\]\(([^)]+)\)\n\n\*(Figure \d+\.)\*([^\n]*)',lambda m:f'<figure><img src="{m.group(2)}" alt="{m.group(1)}"><figcaption><em>{m.group(3)}</em>{m.group(4).replace(chr(92)+"*","*")}</figcaption></figure>',src)  # keep image + caption together
 title=src.split('\n',1)[0].lstrip('# ').strip(); body=src.split('\n',1)[1]
 html=markdown.markdown(body,extensions=['tables','md_in_html'])
 css="""@page{size:A4;margin:2.1cm 2.1cm 2.2cm 2.1cm;@bottom-center{content:counter(page);font-size:9pt;color:#555}}
