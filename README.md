@@ -2,7 +2,7 @@
 
 # Earned or Claimed?
 
-*Auditing 219 "done" reports from a deployed agent swarm:<br>what a coordinator can and cannot learn from a worker's completion report.*
+*Auditing 219 "done" reports from a deployed agent swarm: what a coordinator can and cannot learn from a worker's completion report.*
 
 ![219 completion claims and the existence check](media/fig1.png)
 
