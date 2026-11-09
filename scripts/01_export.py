@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 """Read-only export + scrub. Writes private/export.jsonl, private/scrub-test.txt, data/export_counts.json."""
 import sqlite3,re,json,random,collections,os,sys
+import os,sys; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__))); from private_terms import *
 DB="file:ORCH_ROOT/state/orchestrator.db?mode=ro"
-EX={'REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC','jobs','REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC'}
+EX=EXCLUDED_WORKFLOWS
 # row dropped entirely if any of these appear (rule 4)
 DROP=[r'[\w.+-]+@[\w-]+\.\w+', r'(?<!\w)@[A-Za-z_][\w.]{2,}',
- r'\b(REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC?|REDACTED_TOPIC|REDACTED_TOPIC|canvas lms|exam|assessment|interview|job search|cover letter|resume\.\w+|my resume|applicants?|REDACTED_TOPIC|linkedin|REDACTED_TOPIC|reels?)\b',
- r'\bnami\b|\bjuno\b|\bigl?2?\b',
- r'\$\s?\d|\b(stripe|paypal|payout|revenue|profit|bank account|banking|visa|mastercard|invoice|payment|salary|tax|refund|finance|financial|earnings|credit card|adsense|sales?)\b',
- r'\b(REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|prof|mrs|mr|dr|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME|REDACTED_NAME)\b',
- r'\b(virginia|oak street|main street)\b',r'\b(password|api[_ ]?key|token=|oauth)\b']
+ r'\b('+PRIVATE_TOPICS+r')\b',
+  r'\$\s?\d|\b('+PRIVATE_TOPICS+r')\b',
+ r'\b('+PERSON_NAMES+r')\b',
+ r'\b(password|api[_ ]?key|token=|oauth)\b']
 DROP=re.compile('|'.join(DROP),re.I)
-SUBS=[(r'(?i)\b(?:Nathan(?:\s+Langley)?|Langley)\b','[OWNER]'),(r'\bUSER\w*\b','[USER]'),(r'\bORCH\b','[ORCH]'),
- (r'(?i)render\s*distance(\s+review)?','[CHANNEL]'),(r'(?i)fair\s*little\s*goods(\.com)?','[STORE]'),
+SUBS=[(r'(?i)\b(?:Nathan(?:\s+Langley)?|Langley)\b','[OWNER]'),(r'\bUSER\w*\b','[USER]'),(r'\b'+ORCH_NAME+r'\b','[ORCH]'),
+ (r'(?i)REDACTED_CHANNEL(\s+review)?','[CHANNEL]'),(r'(?i)REDACTED_STORE','[STORE]'),
  (r'(?i)[A-Z]:[\\/](?:[^\s`"\')]|\\ )*','[PATH]'),(r'(?:/mnt/(?:pc|host)|/home/\w+|ORCH_ROOT)[^\s`"\')]*','[PATH]'),
- (r'(?i)\bDesktop[\\/][^\s`"\')]*','[PATH]'),(r'(?i)\bOrchestrator[\\/]host[\\/][^\s`"\')]*','[PATH]'),(r'https?://\S+','[URL]'),(r'\b\d{1,3}(?:\.\d{1,3}){3}\b','[IP]'),
+ (r'(?i)\bDesktop[\\/][^\s`"\')]*','[PATH]'),(r'(?i)\bORCH_HOST_DIR[\\/][^\s`"\')]*','[PATH]'),(r'https?://\S+','[URL]'),(r'\b\d{1,3}(?:\.\d{1,3}){3}\b','[IP]'),
  (r'\b(UC[\w-]{20,})\b','[CHANNEL]'),(r'\b(?=[\w-]*[a-z])(?=[\w-]*[A-Z])(?=[\w-]*\d)[\w-]{11}\b','[VIDID]')]
 SUBS=[(re.compile(a),b) for a,b in SUBS]
 def scrub(s):

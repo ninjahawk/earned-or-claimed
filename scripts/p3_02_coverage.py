@@ -12,8 +12,8 @@ def run(roots,remote):
     o=subprocess.run(cmd,input=code.encode(),capture_output=True,timeout=570)
     if o.returncode: print(o.stderr[-800:],file=sys.stderr)
     return json.loads(o.stdout.decode('utf8','replace'))
-vm=run([['/home/USER/.claude/projects','**/*.jsonl','transcript'],['ORCH_ROOT/claude-projects','**/*.jsonl','transcript'],['ORCH_ROOT/work','*/HANDOFF*.md','note'],['ORCH_ROOT/vmwork','*/HANDOFF*.md','note'],['ORCH_ROOT/state/hostwork','*','note']],False)
-pc=run([['C:/Users/USER/.claude/projects','**/*.jsonl','transcript'],['C:/Users/USER/Desktop/Orchestrator/host/runs','*.handoff.md','note'],['C:/Users/USER/Desktop/Orchestrator/host/runs','*.json','note']],True)
+vm=run([['HOME/.claude/projects','**/*.jsonl','transcript'],['ORCH_ROOT/claude-projects','**/*.jsonl','transcript'],['ORCH_ROOT/work','*/HANDOFF*.md','note'],['ORCH_ROOT/vmwork','*/HANDOFF*.md','note'],['ORCH_ROOT/state/hostwork','*','note']],False)
+pc=run([['PC_HOME/.claude/projects','**/*.jsonl','transcript'],['PC_HOME/ORCH_HOST_DIR/runs','*.handoff.md','note'],['PC_HOME/ORCH_HOST_DIR/runs','*.json','note']],True)
 print('scanned',vm['seen'],pc['seen'],file=sys.stderr)
 best={};tr={}
 for side in(vm,pc):

@@ -12,7 +12,7 @@ All paths are relative to the study repo root. "R2" = RESULTS.md (built by scrip
 | 4 workflows hold the 7 test UNEARNED | R2:41 ("7 UNEARNED in 4 workflows") |
 | 42-item re-read, 35 agree, kappa 0.743 | data/handcheck_stats.json; LABELS-CHECK.md |
 | At least 2 cited jobs later contradicted | LABELS-CHECK.md "Label noise" |
-| 7 rest on AI judge verdicts only; 7 one fix chain (dev); 2 not defended; 13-15 in substance; sweep landed on 15; cap 16.2 vs 7.7 lines/job | ORCH_ROOT/repo/notes/jobs.md:31 (REPORT MUST SAY); HANDOFF-sweep.md |
+| 7 rest on AI judge verdicts only; 7 one fix chain (dev); 2 not defended; 13-15 in substance; sweep landed on 15; cap 16.2 vs 7.7 lines/job | orchestrator notes:31 (REPORT MUST SAY); HANDOFF-sweep.md |
 | Dates 24 Oct - 6 Nov 2026 | QUESTION.md "Unit and population" |
 | 2000-character report cap | QUESTION.md D7 |
 | Seed 20261106; 3 of 7 workflows >=10 jobs held out (40%); time holdout 3 Nov | QUESTION.md "Split"; data/label_counts.json held_out_workflows + all_workflows counts >=10: forge, hoi, jspace, robot30, store, youtube, ytreal = 7 |

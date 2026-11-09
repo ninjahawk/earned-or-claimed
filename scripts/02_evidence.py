@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Collect per-job evidence lines from verifier sources into private/evidence.json (raw lines stay private)."""
 import json,re,glob,importlib.util,collections
+import os,sys; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__))); from private_terms import *
 spec=importlib.util.spec_from_file_location('x','scripts/01_export.py')
 src=open('scripts/01_export.py').read().rsplit('main()',1)[0]
 ns={}; exec(src,ns); scrub=ns['scrub']
 R='ORCH_ROOT/repo/'
-EX=['REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC','jobs','REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC']
+EX=sorted(EXCLUDED_WORKFLOWS)
 jobs={json.loads(l)['id']:json.loads(l) for l in open('private/export.jsonl')}
 ev=collections.defaultdict(lambda:{'results':[],'neg':[]})
 for l in open(R+'notes/results.md'):

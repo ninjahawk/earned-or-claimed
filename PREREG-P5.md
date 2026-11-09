@@ -91,7 +91,7 @@ Sonnet* calls), then Sonnet* on d2. Haiku on d2 is the last thing cut.
 
 ## Limits
 Concurrency 5, retries in call(), each call written to private/p5_runs.jsonl as it returns. Meter guard at weekly 57
-(job line 58). `orchestrator can --job 657 --worst <y>` before each batch. Nothing in this file changes after the first
+(job line 58). the budget check before each batch. Nothing in this file changes after the first
 call; any deviation goes under a Deviations heading below, committed before the affected run.
 
 ## Deviations

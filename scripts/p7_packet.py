@@ -55,5 +55,5 @@ byline=('<div class="byline"><div class="name">Nathan Langley</div>Undergraduate
 doc=(f"<!doctype html><html lang='en'><head><meta charset='utf-8'><title>{H.escape(title)}</title><meta name='author' content='Nathan Langley'>"
      f"<style>{css}</style></head><body><h1>{H.escape(title)}</h1>{byline}{body}</body></html>")
 os.chdir(os.path.join(ROOT,'report/v3')); open('REPORT-v3.html','w').write(doc)
-subprocess.run(['ORCH_ROOT/work/jobs-recpacket-20261101/.venv/bin/weasyprint','REPORT-v3.html',out_pdf],check=True)
+subprocess.run(['weasyprint','REPORT-v3.html',out_pdf],check=True)
 print('wrote',out_pdf)

@@ -4,6 +4,6 @@
  "median_chars": 12000,
  "verif_left": 0,
  "drop_left": 0,
- "USER": 0,
+ "owner_user": 0,
  "nathan": 0
 }

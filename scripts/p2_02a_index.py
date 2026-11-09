@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Read-only evidence index. git log --all on each PC repo via ssh and VM repos locally. Sensitive project trees are left out. Writes private/idx/*."""
 import subprocess,re,json,os,glob,concurrent.futures as F
-SENS=re.compile(r'job search|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|interview|bank|tax',re.I)
+import os,sys; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__))); from private_terms import *
+SENS=re.compile(PRIVATE_TOPICS,re.I)
 FMT='C%x09%H%x09%ct'
 pc=[l.strip() for l in open('private/idx/pc_repos.txt') if l.strip() and not SENS.search(l)]
 def dump(r):

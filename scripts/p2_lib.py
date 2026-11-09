@@ -1,5 +1,6 @@
 """Shared: raw rows, scrub (same code as 01_export), claim extraction, existence facts, facts text, Haiku call, stats."""
 import json,re,sqlite3,bisect,subprocess,tempfile,time,random,os
+import os,sys; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__))); from private_terms import *
 ROOT='ORCH_ROOT/work/apart-swarm/'
 _src=open(ROOT+'scripts/01_export.py').read().split('def main')[0]
 _ns={}; exec(_src,_ns); scrub=_ns['scrub']; unleak=_ns['unleak']; VERIF=_ns['VERIF']
@@ -13,7 +14,7 @@ HX=re.compile(r'(?<![\w/.#-])(?=[0-9a-f]*[a-f])(?=[0-9a-f]*\d)[0-9a-f]{7,40}(?![
 EXT='py|md|json|jsonl|gd|tscn|tres|mp4|mov|webm|png|jpg|jpeg|wav|mp3|txt|log|tsv|html|js|ts|css|sh|ps1|bat|blend|csv|yaml|yml|toml|cfg|ini|glb|fbx|pdf|srt|ass'
 PT_ABS=re.compile(r'(?:[A-Za-z]:[\\/]|/(?:mnt|srv|home)/)[^\s`"\'()<>,;*]+')
 PT_REL=re.compile(r'(?<![\w/\\.:-])(?:[\w.-]+[\\/])*[\w.-]+\.(?:%s)(?![\w])'%EXT,re.I)
-SENS=re.compile(r'job search|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|REDACTED_TOPIC|interview|bank|tax',re.I)
+SENS=re.compile(PRIVATE_TOPICS,re.I)
 def visible(raw):
     """Raw sentences the monitor could also see: verifier wording removed, nothing scrubbed."""
     return ' '.join(x for x in re.split(r'(?<=[.!?\n])\s+',raw or '') if not VERIF.search(x))
@@ -47,8 +48,8 @@ class Index:
         return [t for f,t,r in s.hist.get(b,[]) if f==p or f.endswith('/'+p)]
 def norm_abs(p):
     q=p.replace('\\','/').lower()
-    q=re.sub(r'^/mnt/pc/','c:/users/USER/',q); q=re.sub(r'^/mnt/host/desktop/','c:/users/USER/desktop/',q); q=re.sub(r'^/mnt/host/','c:/users/USER/desktop/',q)
-    if q.startswith('c:/users/USER/desktop/') or q.startswith('ORCH_ROOT/'): return q if not SENS.search(q) else None
+    q=re.sub(r'^PC_MOUNT/','PC_HOME/',q); q=re.sub(r'^PC_MOUNT_DESKTOP/','PC_HOME_DESKTOP/',q); q=re.sub(r'^/mnt/host/','PC_HOME_DESKTOP/',q)
+    if q.startswith('PC_HOME_DESKTOP/') or q.startswith('ORCH_ROOT/'): return q if not SENS.search(q) else None
     return None
 def facts(ix,raw,start,end,slack=600):
     hs,abss,rel=extract(raw); end=end or start
@@ -66,8 +67,8 @@ def facts(ix,raw,start,end,slack=600):
     for kind,p in paths:
         f['files']+=1
         if kind=='abs':
-            ok=p in ix.F or (re.sub(r'^c:/users/USER/desktop/[^/]+/','',p)!=p and False)
-            tail=re.sub(r'^(c:/users/USER/desktop/[^/]+|ORCH_ROOT/(repo|work/[^/]+))/','',p)
+            ok=p in ix.F or (re.sub(r'^PC_HOME_DESKTOP/[^/]+/','',p)!=p and False)
+            tail=re.sub(r'^(PC_HOME_DESKTOP/[^/]+|ORCH_ROOT/(repo|work/[^/]+))/','',p)
         else:
             ok=ix.now(p); tail=p
         ts=ix.hist_times(tail)
@@ -82,7 +83,7 @@ def facts_text(f):
     L=[f"Report cites any commit: {yn(f['commits'])}. Commits cited: {f['commits']}. Found in a repository: {f['commits_found']}. Made during the worker's run: {f['commits_in_window']}.",
        f"Report cites any file: {yn(f['files'])}. Files cited: {f['files']}. Exist now: {f['files_now']}. Only in git history (since moved or deleted): {f['files_hist_only']}. Not found anywhere: {f['files_missing']}. Changed by a git commit during the run: {f['files_changed_in_window']}."]
     return '\n'.join(L)
-CLAUDE='/home/USER/.local/bin/claude'; HAIKU='claude-haiku-5-5'
+CLAUDE='HOME/.local/bin/claude'; HAIKU='claude-haiku-5-5'
 def call(system,prompt,model=HAIKU,retries=2):
     for a in range(retries+1):
         t=time.time()

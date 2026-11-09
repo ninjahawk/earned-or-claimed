@@ -2,11 +2,12 @@
 """Step 4: miss rate. Fresh Sonnet with read-only tools searches a copy of the same sources for one job.
 Hits go to private/sweep_miss_candidates.jsonl, then through sweep_03_decide.py. Usage: sweep_04_miss.py nocand|fill N"""
 import sys,json,os,re,glob,shutil,sqlite3,random
+import os,sys; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__))); from private_terms import *
 sys.path.insert(0,'scripts'); import sweep_lib as S
 from sweep_03_defn import DEFN
 mode=sys.argv[1]; N=int(sys.argv[2]) if len(sys.argv)>2 else 30
 R='ORCH_ROOT/repo/'; T='/tmp/sweep_src'
-EX={'REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC','jobs','REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC'}
+EX=EXCLUDED_WORKFLOWS
 c=sqlite3.connect("file:ORCH_ROOT/state/orchestrator.db?mode=ro",uri=True); c.row_factory=sqlite3.Row
 TXT={r['id']:dict(r) for r in c.execute("select id,workflow,task,handoff,finished,created from delegations")}
 M=json.load(open('private/sweep_mask_map.json'))

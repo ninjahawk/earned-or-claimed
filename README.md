@@ -154,7 +154,7 @@ python report/latex/build.py
 
 The exact monitor prompts are in `scripts/p2_prompts.py` and `scripts/p3_prompts.py`.
 
-The published aggregate data supports reproducing the analysis. End-to-end monitor reruns require the raw reports, which remain private because they contain personal task data.
+The published aggregate data supports reproducing the analysis. End-to-end monitor reruns require the raw reports, which remain private because they contain personal task data. For the same reason, the export and scrub scripts read their privacy term lists, excluded workflows and local paths from `scripts/private_terms.py`, which loads them from an unpublished `private/terms.json`.
 
 **Full paper:** [Earned or Claimed? Auditing 219 "Done" Reports From a Deployed Agent Swarm](report/REPORT-final.pdf)
 

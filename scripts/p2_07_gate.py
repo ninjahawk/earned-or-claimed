@@ -23,7 +23,7 @@ def art(f,raw):
         if not re.search(r'\.(py|md|json|gd|txt|log|tsv|html|js|ts|sh|csv|yaml|yml|toml|ini)$',p,re.I): continue
         q=p.replace('\\','/').lower().lstrip('./'); c=[x for x in ix.base.get(q.rsplit('/',1)[-1],[]) if x.endswith('/'+q) or x==q]
         if not c: continue
-        x=c[0]; local=x.replace('c:/users/USER/','/mnt/pc/') 
+        x=c[0]; local=x.replace('PC_HOME/','PC_MOUNT/') 
         for cand in [local]:
             try:
                 # index is lower-cased; read through a case-insensitive shell only on the PC

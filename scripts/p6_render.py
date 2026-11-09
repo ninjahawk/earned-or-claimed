@@ -21,4 +21,4 @@ code{font-size:8.8pt}ul,ol{margin:.3em 0 .5em;padding-left:1.4em}li{margin:.15em
 a{color:#1a5276;text-decoration:none}"""
 doc=f"<!doctype html><html><head><meta charset='utf-8'><title>{title}</title><style>{css}</style></head><body><h1>{title}</h1>{html}</body></html>"
 open('REPORT-final.html','w').write(doc)
-subprocess.run(['ORCH_ROOT/work/jobs-recpacket-20261101/.venv/bin/weasyprint','REPORT-final.html','REPORT-final.pdf'],check=True)
+subprocess.run(['weasyprint','REPORT-final.html','REPORT-final.pdf'],check=True)

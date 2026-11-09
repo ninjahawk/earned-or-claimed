@@ -2,9 +2,10 @@
 """Step 2: scripted candidate search. Same rules for every job; decides no labels.
 For each job in scope: lines naming its id or its artifacts, in the listed sources, not dated before its claim. private/sweep_candidates.jsonl."""
 import json,re,os,glob,sqlite3,subprocess,collections,datetime as D
+import os,sys; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__))); from private_terms import *
 R='ORCH_ROOT/repo/'; CH=[188,200,218,226,230,247,289,293,306,313,322,336]
 VD='/mnt/host/Desktop/Robot30/docs/judges/'
-EX={'REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC','jobs','REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC','REDACTED_TOPIC'}
+EX=EXCLUDED_WORKFLOWS
 c=sqlite3.connect("file:ORCH_ROOT/state/orchestrator.db?mode=ro",uri=True); c.row_factory=sqlite3.Row
 DL={r['id']:dict(r) for r in c.execute("select id,created,finished,workflow,status,task,handoff from delegations")}
 M=json.load(open('private/sweep_mask_map.json'))
@@ -111,7 +112,7 @@ for fn in ('true_positives','false_positives'):
             if str(d.get('job','')).isdigit(): sent[int(d['job'])].append(d.get('note') or '')
     except Exception as e: unread.append(f'{p}: {e}')
 DEF=re.compile(r"fail|reject|missing|wrong|stale|false|defect|broken|\bbug|not done|did not|didn't|never|no result|flicker|redo|rework|contradict|wasn't|empty|unmet|below|incident|not met|bad\b|doesn't|does not",re.I)
-YT=re.compile(r'youtube|REDACTED_TOPIC|video|short|\bYT\b',re.I)
+YT=re.compile(r'youtube|REDACTED_CHANNEL|video|short|\bYT\b',re.I)
 SK=re.compile(r'(run|wake|check|EXPECT|exp|video|issue|PR|ask|watch|mail|Q|sub)\s*$',re.I)
 def idpat(i): return re.compile(rf'(?:(?<![\w#])#{i}\b|\bdelegations?[-\s#]*{i}\b|\bjobs?\s+#?{i}\b|#\d+\s*[/+,&]\s*#?{i}\b|\bHANDOFF-delegation-{i}\b)',re.I)
 def win(t,m,n=350):

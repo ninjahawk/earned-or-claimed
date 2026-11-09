@@ -2,7 +2,7 @@
 """L3 excerpts (no model) + scrub test: 50 rows to private/p3_l3_scrub_test.txt, residual scans to stdout, counts in data/p3_l3_scrub.json."""
 import sys,random,collections; sys.path.insert(0,'scripts'); from p3_lib import *
 L=labels(); FR={json.loads(l)['id']:json.loads(l) for l in open('private/full_reports.jsonl')}
-def local(p): return re.sub(r'^C:/Users/USER/','/mnt/pc/',p.replace('\\','/'))
+def local(p): return re.sub(r'^PC_HOME/','PC_MOUNT/',p.replace('\\','/'))
 E={}
 for i,x in FR.items():
     if x['kind']=='transcript' and L[i]['label'] in('EARNED','UNEARNED'): E[str(i)]=transcript_excerpt(local(x['path']))
