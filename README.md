@@ -2,7 +2,7 @@
 
 # Earned or Claimed?
 
-*Auditing 219 "done" reports from a deployed agent swarm: what a coordinator can and cannot learn from a worker's completion report.*
+*219 "done" reports from a deployed agent swarm. 15 were false. File-existence checks caught 0.*
 
 ![219 completion claims and the existence check](media/fig1.png)
 
@@ -13,26 +13,7 @@
 [![Preregistered](https://img.shields.io/badge/Preregistered-yes-8a63d2)](PREREG-P2.md)
 [![License](https://img.shields.io/badge/License-Apache_2.0-green)](LICENSE)
 
-**[📄 The paper](report/REPORT-final.pdf)** · **[🧪 Preregistrations](PREREG-P2.md)** · **[📊 Results](RESULTS.md)** · **[🏆 Apart Swarm Alignment Sprint](https://apartresearch.com/sprints/swarm-alignment-2026)**
-
-Nathan Langley · University of North Carolina at Greensboro<br>
-*Submitted to the Swarm Alignment Hackathon, an Apart Research Sprint · November 2026*
-
 </div>
-
----
-
-## Getting started & staying tuned with us.
-
-Star us, and you will receive all release notifications from GitHub without any delay!
-
-<a href="https://star-history.com/#ninjahawk/earned-or-claimed&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ninjahawk/earned-or-claimed&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ninjahawk/earned-or-claimed&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ninjahawk/earned-or-claimed&type=Date" />
- </picture>
-</a>
 
 ---
 
@@ -47,6 +28,8 @@ The study then tested whether language-model monitors could distinguish earned c
 A narrower prompt asking whether the report matched the assigned task performed better on planted wrong-task reports. It did not outperform a free BM25 baseline. No tested scorer reliably separated planted omissions from earned reports.
 
 The central distinction is between *reporting completion* and *establishing completion*. Neither a completed runner status, a plausible report, nor the existence of cited artifacts necessarily establishes that the delegated task was fulfilled.
+
+**The practical implication:** completion verification should be decomposed into separate checks for task relevance, evidence consistency, and actual delivery of the requested outcome.
 
 ## What the audit shows that the completion report does not
 

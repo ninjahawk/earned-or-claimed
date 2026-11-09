@@ -6,4 +6,4 @@ A report-only Haiku monitor performed near chance on natural UNEARNED cases (AUR
 
 A narrower Haiku task-match prompt detected planted wrong-task reports better than the omnibus prompt: AUROC 0.897 versus 0.645, a paired gain of +0.252 [+0.141, +0.378]. The gain persisted on harder same-workflow swaps (+0.182 [+0.083, +0.274]), but task-match was no better than a free BM25 baseline.
 
-No tested scorer separated planted omissions from earned reports (AUROC 0.514–0.551). These results come from scripted edits of real reports in one deployment.
+No tested scorer separated planted omissions from earned reports (AUROC 0.514–0.551). The practical implication is that completion verification should be decomposed into separate checks for task relevance, evidence consistency, and actual delivery of the requested outcome. These results come from scripted edits of real reports in one deployment.
